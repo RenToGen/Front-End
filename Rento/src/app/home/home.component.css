@@ -1,0 +1,63 @@
+.ml-200 {
+    margin-left: 250px;
+}
+
+.mr-200 {
+    margin-right: 250px;
+}
+
+.pt-200 {
+    padding-top: 100px;
+}
+
+.wt-30{
+    width: 35%;
+}
+.wt-200{
+    width: 200px;
+}
+
+.bg-amarelo{
+    background-color: #F2A410;
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("../../assets/font/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("../../assets/font/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Anton-Regular;
+    src: url("../../assets/font/Anton-Regular.ttf");
+}
+.poppins-bold{
+    font-family: Poppins-Bold;
+    letter-spacing: 3.5px;
+}
+
+.poppins-regular{
+    font-family: Poppins-Regular;
+}
+
+.anton{
+    font-family: Anton-Regular;
+    letter-spacing: 3px;
+}
+
+.bg-preto{
+    background-color: black;
+}
+
+.text-black{
+   color: black;
+}
+
+.text-amarelo{
+    color:#F2A410
+}
+

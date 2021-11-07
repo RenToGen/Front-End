@@ -1,8 +1,15 @@
 
 @font-face {
-    font-family: "MonumentExtended";
-    src: url('/Rento/src/assets/font/MonumentExtended-Regular.otf');
+    font-family: MonumentExtended;
+    src: url("../../assets/font/MonumentExtended-Regular.otf") format("OpenType");
 }
+
+@font-face {
+    font-family: Azeebee;
+    src: url("../../assets/font/ABeeZee-Regular.ttf");
+}
+
+
 
 .bg-nb {
     background-color: #E06309;
@@ -16,12 +23,12 @@
    
 }
 
-
-.fs-19{
-    font-size: 19pt;
-   
-    font-family: "MonumentExtended";
-}
+.fs-13{
+    font-family: MonumentExtended;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    font-weight: 100;
+   }
 
 .bt-nv {
     border-right-color:  #DE3411;  
@@ -30,9 +37,13 @@
     border-top-color:#FD7B83;
     border-width:2px;
     background-color: black;
-    font-size: 12pt;
+    font-size: 10pt;
+    font-family: Azeebee;
+    letter-spacing: 3px;
     color: #F2A410;
     border-radius: 25px;
     
 }
+
+
 

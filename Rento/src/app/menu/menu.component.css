@@ -1,3 +1,38 @@
-.fs-16{
-    font-size: 16pt;
+
+@font-face {
+    font-family: "MonumentExtended";
+    src: url('/Rento/src/assets/font/MonumentExtended-Regular.otf');
 }
+
+.bg-nb {
+    background-color: #E06309;
+}
+
+.lg-nb {
+    margin-bottom: -120px;
+    margin-right: 24px;
+    margin-left: 70px;
+    padding-top: 25px;
+   
+}
+
+
+.fs-19{
+    font-size: 19pt;
+   
+    font-family: "MonumentExtended";
+}
+
+.bt-nv {
+    border-right-color:  #DE3411;  
+    border-left-color: #DE3411 ; 
+    border-bottom-color:#FD7B83; 
+    border-top-color:#FD7B83;
+    border-width:2px;
+    background-color: black;
+    font-size: 12pt;
+    color: #F2A410;
+    border-radius: 25px;
+    
+}
+

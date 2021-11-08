@@ -15,19 +15,19 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-start ml-5" id="navbarNavAltMarkup">
-      <div class="navbar-nav fs-19">
-        <a class="nav-item nav-link active  mr-4 text-white font-weight-bold" href="#">Home <span class="sr-only"></span></a>
-        <a class="nav-item nav-link mr-4 text-white" href="#">Cursos</a>
-        <a class="nav-item nav-link mr-4 text-white" href="#">Serviços</a>
-        <a class="nav-item nav-link mr-4 text-white" href="#">Sobre nós</a> 
-        <a class="nav-item nav-link mr-4 text-white" href="#">Contato</a> 
-              
+      <div class="navbar-nav fs-13 ">
+        <a class="nav-item nav-link active  mr-4 text-white " href="#">Home <span class="sr-only"></span></a>
+        <a class="nav-item nav-link mr-4 text-white" routerLink='/cursos'>Cursos</a>
+        <a class="nav-item nav-link mr-4 text-white" routerLink='/servicos'>Serviços</a>
+        <a class="nav-item nav-link mr-4 text-white" routerLink='/sobre'>Sobre nós</a> 
+        <a class="nav-item nav-link mr-4 text-white" routerLink='/contato'>Contato</a> 
+                
     
       </div>
     </div>
-    <div class="justify-content-center mr-5">
-      <button type="button" class="btn ml-3 bt-nv mr-4 "> ENTRAR </button>
-      <button type="button" class="btn  bt-nv">CADASTRE-SE</button>
+    <div class="justify-content-center mr-5 ">
+      <button type="button" routerLink='/login' class="btn ml-3 bt-nv mr-4 "> ENTRAR </button>
+      <button type="button" routerLink='/cadastrar' class="btn  bt-nv azeebee">CADASTRE-SE</button>
     </div> 
   </nav>
 </body>

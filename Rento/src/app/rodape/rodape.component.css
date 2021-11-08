@@ -92,3 +92,27 @@ section .section-title {
 }
 
 }
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("../../assets/font/Poppins-Regular.ttf");
+}
+
+.poppins-regular{
+    font-family: Poppins-Regular;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+.fs-13{
+    font-size: 13pt;
+}
+
+.fs-20{
+    font-size: 20pt;
+}
+
+.fs-10{
+    font-size: 10pt;
+}

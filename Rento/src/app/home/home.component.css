@@ -61,3 +61,11 @@
     color:#F2A410
 }
 
+.responsive-image {
+    height: auto;
+    width: 70%;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+}

@@ -10,15 +10,14 @@
 }
 
 
-
 .bg-nb {
     background-color: #E06309;
 }
 
 .lg-nb {
     margin-bottom: -120px;
-    margin-right: 24px;
-    margin-left: 70px;
+    margin-right: 20px;
+    margin-left: 12px;
     padding-top: 25px;
    
 }
@@ -44,6 +43,11 @@
     border-radius: 25px;
     
 }
-
-
-
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}

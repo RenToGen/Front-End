@@ -28,7 +28,8 @@ export class LoginComponent implements OnInit {
       environment.nome = this.usuarioLogin.nome
       environment.foto = this.usuarioLogin.foto
       environment.id = this.usuarioLogin.id
-      
+      alert('Usuario logado com sucesso!')
+
       this.router.navigate(['/home'])
     }, erro =>{
       if(erro.status == 401){

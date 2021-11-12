@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,22 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  logado(){
+    let ok = false
+  
+    if(environment.token != ''){
+      ok = true
+    } 
+    return ok
+  }
 
+  deslogado(){
+    let ok = false
+  
+    if(environment.token == ''){
+      ok = true
+    } 
+    return ok
+  }
 }

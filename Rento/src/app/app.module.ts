@@ -12,6 +12,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { HomeComponent } from './home/home.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SobreComponent } from './sobre/sobre.component';
     CadastrarComponent,
     HomeComponent,
     ServicosComponent,
-    SobreComponent
+    SobreComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,

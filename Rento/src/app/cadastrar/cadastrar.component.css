@@ -1,0 +1,96 @@
+.container-fluid {
+    position: absolute;
+    background: rgba(222, 52, 17, 0.7);
+    border-radius: 50px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 35px;
+    /* identical to box height */
+    letter-spacing: 0.215em;
+    color: #FFFFFF;
+}
+
+
+.form1 {
+    position: relative;
+    width: 376px;
+    height: 54px;
+    left: 50px;
+    background: #E3E2E2;
+    border-radius: 10px;
+    border-radius: 50px;
+}
+
+.form2 {
+    position: relative;
+    width: 376px;
+    height: 54px;
+    left: 50px;
+    background: #E3E2E2;
+    border-radius: 10px;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    color: #c83e14;
+}
+
+::placeholder {
+    position: absolute;
+    width: 200px;
+    height: 23px;
+    left: 40px;
+    top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    color: rgba(222, 52, 17, 0.5) !important;
+}
+
+.botao1 {
+    position: relative;
+    width: 100px;
+    height: 56px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background: #111111;
+    border-radius: 45.3172px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    font-family: ABeeZee;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    text-align: center;
+    color: #F4EFE9;
+}
+
+.botao2 {
+    position: relative;
+    width: 100px;
+    height: 56px;
+    margin-top: 20px;
+    background: #111111;
+    border-radius: 45.3172px;
+    text-align: 30px;
+    font-family: ABeeZee;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #F4EFE9;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

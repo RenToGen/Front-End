@@ -44,14 +44,10 @@
         <li class="nav-item">
           <a class="nav-item nav-link mr-4 text-white" routerLink='/contato'>Contato</a>
         </li>
-        <li class="nav-item">
-          <button class="btn btn-warning" (click)='recebeDados()' type="button">Sair</button>
-        </li>
-
       </ul>
       
       <div class="form-inline my-2 my-lg-0 "  >
-        <button type="button" *ngIf='deslogado()' class="btn ml-3 bt-nv mr-4 " data-toggle="modal" data-target="#modalLogin" > ENTRAR
+        <button type="button" *ngIf='deslogado()' class="btn ml-3 bt-nv mr-4 "  data-toggle="modal" data-target="#modalLogin" > ENTRAR
         </button>
         <button type="button" *ngIf='deslogado()' class="btn  bt-nv azeebee" data-toggle="modal"  data-target="#modalCadastro">CADASTRE-SE</button>
       </div>
@@ -59,16 +55,17 @@
       <div class="form-inline my-2 my-lg-0 "  >
        
       
-      <ul *ngIf='logado()' class="navbar-nav mr-auto d-flex align-items-center">
+      <ul *ngIf='logado()' class="navbar-nav mr-auto d-flex align-items-center" >
         <div class="nav-item active">
             <img src="{{foto}}"
                 alt="Imagem do User" width="50px" height="50px" class="img-fluid rounded-circle">
         </div>
-        <div class="nav-item pl-3">
+        <div class="nav-item pl-3" >
+          
             <p class="m-0 font-weight-bold text-white fs-16"> {{nome}} </p>
         </div>
         <li class="nav-item pl-3">
-            <div class="d-grid gap-2 d-md-block">
+            <div class="d-grid gap-2 d-md-block" >
               <button class="btn btn-warning" (click)='sair()' type="button">Sair</button>
             </div>
         </li>

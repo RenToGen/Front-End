@@ -14,8 +14,8 @@ import { AuthService } from '../service/auth.service';
 
 export class MenuComponent implements OnInit {
 
-  nome = environment.nome
-  foto = environment.foto
+  nome = ''
+  foto = ''
 
   constructor(    
     
@@ -33,6 +33,7 @@ export class MenuComponent implements OnInit {
   
     if(environment.token != ''){
       ok = true
+      this.recebeDados()
     } 
     return ok
   }
@@ -54,11 +55,11 @@ export class MenuComponent implements OnInit {
     environment.id = 0
 
   }
-
   recebeDados(){
     this.nome = environment.nome
     this.foto = environment.foto
   }
+
 }
 
 

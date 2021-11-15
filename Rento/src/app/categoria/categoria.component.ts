@@ -10,7 +10,6 @@ import { CategoriaService } from './../service/categoria.service';
   styleUrls: ['./categoria.component.css']
 })
 
-
 export class CategoriaComponent implements OnInit {
 
   categoria: Categoria = new Categoria()
@@ -23,8 +22,9 @@ export class CategoriaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
     if(environment.token == ''){
-      this.router.navigate(['/logar'])
+    this.router.navigate(['/logar'])
   }
   this.findAllCategorias()
 }
@@ -33,10 +33,6 @@ export class CategoriaComponent implements OnInit {
          this.listaCategoria = resp
        })
      }
-
-
-
-
 
   cadastrar(){
      this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria)=>{

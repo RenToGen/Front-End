@@ -273,7 +273,9 @@ body::before{
 }
 .container .main-card{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
+  /* justify-content: space-evenly; */
+
   width: 200%;
   transition: 1s;
 }

@@ -16,10 +16,13 @@ export class CategoriaService {
   }
 
     getAllCategoria(): Observable<Categoria[]>{
+      this.token = {
+        headers: new HttpHeaders().set('Authorization', environment.token)
+      }
     return this.http.get<Categoria[]>('https://rentogen.herokuapp.com/categoria', this.token)
   }
     postCategoria(categoria: Categoria): Observable<Categoria>{
-    return this.http.post<Categoria>('http://localhost:8080/categoria', categoria, this.token)
+    return this.http.post<Categoria>('https://rentogen.herokuapp.com/categoria', categoria, this.token)
   }
 
 }

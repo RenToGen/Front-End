@@ -8,164 +8,197 @@
 	<meta name="author" content="">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="./categoria.js"></script>
+	<!--owl slider stylesheet -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 	<title>RenTo | Serviços</title>
 </head>
 
-
 <body>
-	<input type="radio" id="s-1" name="slider-control" checked="checked">
-	<input type="radio" id="s-2" name="slider-control">
-	<input type="radio" id="s-3" name="slider-control">
-	<div class="js-slider">
-		<figure class="js-slider_item img-1">
-			<div class="js-slider_img">
-				<img class="c-img-w-full"
-					src="https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info"
-					alt="">
-			</div>
-			<figcaption class="wo-caption">
-				<h3 class="wo-h3">
-					<div class="c-label">IMPACTO SOCIAL</div>
-					<br class="view-sm mb-s">Veja nossa história
-				</h3>
-				<ul class="wo-credit">
-					<li>摺物118枚 寛政元-12年 (1789-1800)</li>
-					<li>島根県立美術館(永田コレクション)</li>
-					<li>通期展示
-						<span class="c-txt-s">※4期に分けて全点を展示</span>
-					</li>
-				</ul>
-			</figcaption>
-		</figure>
-		<figure class="js-slider_item img-2">
-			<div class="js-slider_img">
-				<img class="c-img-h-full" src="https://pics.codecolor.cn/images-opacity-slider/img_2_1.jpg" alt="">
-			</div>
-			<figcaption class="wo-caption">
-				<h3 class="wo-h3">CULTURA DE PAZ</h3>
-				<ul class="wo-credit">
-					<li>大判 享和年間 (1801-04)</li>
-					<li>リー・ダークス・コレクション</li>
-					<li>展示期間：1月30日 (水) ～ 2月18日 (月)</li>
-				</ul>
-			</figcaption>
-		</figure>
-		<figure class="js-slider_item img-3">
-			<div class="js-slider_img">
-				<img class="c-img-h-full"
-					src="https://image.freepik.com/free-photo/beautiful-young-black-woman-stands-meditative-pose-enjoys-peaceful-atmosphere-holds-hands-praying-gesture_273609-19132.jpg"
-					alt="">
-			</div>
-			<figcaption class="wo-caption">
-				<h3 class="wo-h3">O NOVO FUTURO</h3>
-				<ul class="wo-credit">
-					<li>大判 享和年間 (1801-04)</li>
-					<li>米・個人蔵</li>
-					<li>展示期間：1月30日 (水) ～ 2月18日 (月)</li>
-				</ul>
-			</figcaption>
-		</figure>
-		<div class="js-slider_nav">
-			<label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
-			<label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
-			<label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
-			<label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
-			<label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
-			<label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
-		</div>
-		<div class="js-slider_indicator">
-			<div class="js-slider-indi indi-1"></div>
-			<div class="js-slider-indi indi-2"></div>
-			<div class="js-slider-indi indi-3"></div>
-		</div>
-	</div>
-
-	<div *ngFor='let item of listaCategoria' class="primeira-categoria">
-		<h2>{{item.descricao}}</h2>
-		<h3>R$ {{item.valor}}</h3>
-		<div class="container">
-			<input type="radio" name="dot" id="one">
-			<input type="radio" name="dot" id="two">
-			<div class="main-card">
-				<div class="cards">
-					<div class="card">
-						<div class="content">
-							<div class="img">
-								 <img src="https://i.imgur.com/F5iVgfe.jpg" alt="">
-							</div>
-							<div class="details">
-								<div class="name">Andrew Neil</div>
-								<div class="job">Web Designer</div>
-							</div>
-							<div class="media-icons">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-								<a href="#"><i class="fab fa-youtube"></i></a>
-							</div>
-						</div>
+	<!-- slider section -->
+    <section class="slider_section ">
+		<div id="customCarousel1" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <div class="container ">
+				<div class="row">
+				  <div class="col-md-7 col-lg-6 ">
+					<div class="detail-box">
+					  <h1>
+						Fast Food Restaurant
+					  </h1>
+					  <p>
+						Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+					  </p>
+					  <div class="btn-box">
+						<a href="" class="btn1">
+						  Order Now
+						</a>
+					  </div>
 					</div>
-					<div class="card">
-						<div class="content">
-							<div class="img">
-								 <img src="https://i.imgur.com/F5iVgfe.jpg" alt="">
-							</div>
-							<div class="details">
-								<div class="name">Andrew Neil</div>
-								<div class="job">Web Designer</div>
-							</div>
-							<div class="media-icons">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-								<a href="#"><i class="fab fa-youtube"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="content">
-							<div class="img">
-								 <img src="https://i.imgur.com/F5iVgfe.jpg" alt="">
-							</div>
-							<div class="details">
-								<div class="name">Andrew Neil</div>
-								<div class="job">Web Designer</div>
-							</div>
-							<div class="media-icons">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-								<a href="#"><i class="fab fa-youtube"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="content">
-							<div class="img">
-								 <img src="https://i.imgur.com/F5iVgfe.jpg" alt="">
-							</div>
-							<div class="details">
-								<div class="name">Andrew Neil</div>
-								<div class="job">Web Designer</div>
-							</div>
-							<div class="media-icons">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-								<a href="#"><i class="fab fa-youtube"></i></a>
-							</div>
-						</div>
-					</div>
+				  </div>
 				</div>
+			  </div>
 			</div>
-			<div class="button">
-				<label for="one" class="active one"></label>
-				<label for="two" class="two"></label>
+			<div class="carousel-item ">
+			  <div class="container ">
+				<div class="row">
+				  <div class="col-md-7 col-lg-6 ">
+					<div class="detail-box">
+					  <h1>
+						Fast Food Restaurant
+					  </h1>
+					  <p>
+						Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+					  </p>
+					  <div class="btn-box">
+						<a href="" class="btn1">
+						  Order Now
+						</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
 			</div>
+			<div class="carousel-item">
+			  <div class="container ">
+				<div class="row">
+				  <div class="col-md-7 col-lg-6 ">
+					<div class="detail-box">
+					  <h1>
+						Fast Food Restaurant
+					  </h1>
+					  <p>
+						Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+					  </p>
+					  <div class="btn-box">
+						<a href="" class="btn1">
+						  Order Now
+						</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="container">
+			<ol class="carousel-indicators">
+			  <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+			  <li data-target="#customCarousel1" data-slide-to="1"></li>
+			  <li data-target="#customCarousel1" data-slide-to="2"></li>
+			</ol>
+		  </div>
+		</div>
+	  </section>
+	  <!-- end slider section -->
+	<div class="fundo">
+		<div class="categoria">
+			<h1>EDIÇÃO</h1>
+			<h2>MÉDIA DE PREÇO: R$8,00</h2>
+			<!--cards-->
+			<div class="container">
+				<input type="radio" name="dot" id="one">
+				<input type="radio" name="dot" id="two">
+				<div class="main-card">
+				  <div class="cards">
+					<div class="card">
+					 <div class="content">
+					   <div class="img">
+						<img src="https://image.freepik.com/free-photo/video-maker-editing-movie-using-post-production-software-working-creative-agency-pc-with-green-screen-chroma-key-mock-up-isolated-display_482257-5434.jpg" alt="">
+					   </div>
+					   <div class="details">
+						 <div class="job">Edição de Video</div>
+						 <div class="nome">Lucas Carlos</div>
+					   </div>
+					   <div class="media-icons">
+						 <a href="#"><i class="fab fa-opencart"></i></a>
+					   </div>
+					 </div>
+					</div>
+					<div class="card">
+					 <div class="content">
+					   <div class="img">
+						<!--- <img src="images/img2.jpg" alt="">--->
+					   </div>
+					   <div class="details">
+						 <div class="job">Jasmine Carter</div>
+						 <div class="nome">UI Designer</div>
+					   </div>
+					   <div class="media-icons">
+						<a href="#"><i class="fab fa-opencart"></i></a>
+					   </div>
+					 </div>
+					</div>
+					<div class="card">
+					 <div class="content">
+					   <div class="img">
+						<!-- <img src="images/img3.jpg" alt="">---->
+					   </div>
+					   <div class="details">
+						 <div class="job">Justin Chung</div>
+						 <div class="nome">Web Devloper</div>
+					   </div>
+					   <div class="media-icons">
+						<a href="#"><i class="fab fa-opencart"></i></a>
+					   </div>
+					 </div>
+					</div>
+				  </div>
+				  <div class="cards">
+					<div class="card">
+					 <div class="content">
+					   <div class="img">
+						 <!---<img src="images/img4.jpg" alt="">--->
+					   </div>
+					   <div class="details">
+						 <div class="job">Appolo Reef</div>
+						 <div class="nome">Web Designer</div>
+					   </div>
+					   <div class="media-icons">
+						<a href="#"><i class="fab fa-opencart"></i></a>
+					   </div>
+					 </div>
+					</div>
+					<div class="card">
+					 <div class="content">
+					   <div class="img">
+						 <!--<img src="images/img5.jpg" alt="">---->
+					   </div>
+					   <div class="details">
+						 <div class="job">Adrina Calvo</div>
+						 <div class="nome">UI Designer</div>
+					   </div>
+					   <div class="media-icons">
+						<a href="#"><i class="fab fa-opencart"></i></a>
+					   </div>
+					 </div>
+					</div>
+					<div class="card">
+					 <div class="content">
+					   <div class="img">
+						 <!--<img src="images/img6.jpeg" alt="">--->
+					   </div>
+					   <div class="details">
+						 <div class="job">Nicole Lewis</div>
+						 <div class="nome">Web Devloper</div>
+					   </div>
+					   <div class="media-icons">
+						<a href="#"><i class="fab fa-opencart"></i></a>
+					   </div>
+					 </div>
+					</div>
+				  </div>
+				</div>
+				<div class="button">
+				  <label for="one" class=" active one"></label>
+				  <label for="two" class="two"></label>
+				</div>
+			  </div>
+			  <!--cards-->
 		</div>
 	</div>
-
 </body>
 
 </html>

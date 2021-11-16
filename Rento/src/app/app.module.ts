@@ -31,7 +31,7 @@ import { AdminComponent } from './admin/admin.component';
     SobreComponent,
     CategoriaComponent,
     CategoriaEditComponent,
-    CategoriaDeleteComponent
+    CategoriaDeleteComponent,
     AdminComponent
   ],
   imports: [

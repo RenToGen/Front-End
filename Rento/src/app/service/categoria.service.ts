@@ -37,6 +37,9 @@ export class CategoriaService {
   }
 
   deleteCategoria(id: number) {
+    this.token = {
+      headers: new HttpHeaders().set('Authorization', environment.token)
+    }
     return this.http.delete(`https://rentogen.herokuapp.com/categoria/${id}`, this.token)
   }
 

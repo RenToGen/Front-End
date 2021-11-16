@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { Categoria } from '../model/Categoria';
 import { CategoriaService } from '../service/categoria.service';
 
 @Component({
@@ -12,13 +13,16 @@ export class AdminComponent implements OnInit {
 
   nome = ''
   foto = ''
+  Categoria = new Categoria
 
   constructor(
     private router: Router,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
   }
   logado(){
     let ok = false
@@ -42,6 +46,15 @@ export class AdminComponent implements OnInit {
     this.nome = environment.nome
     this.foto = environment.foto
   }
+  
+  cadastrar(){
+    this.categoriaService.postCategoria(this.Categoria).subscribe((resp: Categoria)=>{
+      this.Categoria = resp
+      alert('Tema cadastrado com sucesso!')
+      this.categoriaService.getAllCategoria()
+      this.Categoria = new Categoria()
+    })
+ }
 
 
 }

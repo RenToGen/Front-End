@@ -24,7 +24,7 @@ const routes: Routes = [
   {path: 'sobre', component: SobreComponent},
   {path: 'categoria', component: CategoriaComponent},
   {path: 'categoria-edit/:id', component: CategoriaEditComponent},
-  {path: 'categoria-delete/:id', component: CategoriaEditComponent}
+  {path: 'categoria-delete/:id', component: CategoriaEditComponent},
   {path: 'admin', component: AdminComponent}
   
 ];

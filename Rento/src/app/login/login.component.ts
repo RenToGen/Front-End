@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
       environment.foto = this.usuarioLogin.foto
       environment.id = this.usuarioLogin.id
 
-      console.log(environment.nome)
+      console.log(environment.token)
       alert('Usuario logado com sucesso!')
 
       this.router.navigate(['/home'])

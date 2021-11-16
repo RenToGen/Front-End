@@ -106,15 +106,8 @@
 				<h2 class="valor-categoria">R$ {{item.valor}}</h2>
 				<div>
 					<button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]">Editar</button>
-					<button class="btn btn-danger" [routerLink]="['/categoria-delete', item.id]" data-toggle="modal" data-target="#modalApagar">Apagar</button>
-					<div class="modal" id='modalApagar' tabindex="-1" role="dialog">
-						<div class="modal-dialog" role="document">
-						  <div class="modal-content">
-							<app-categoria-delete></app-categoria-delete>
-						
-						  </div>
-						</div>
-					  </div>
+					<button class="btn btn-danger" [routerLink]="['/categoria-delete', item.id]" >Apagar</button>
+				
 				</div>
 				<div class="container">
 					<input type="radio" name="dot" id="one">

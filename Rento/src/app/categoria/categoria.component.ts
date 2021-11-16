@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Categoria } from './../model/Categoria';
 import { environment } from './../../environments/environment.prod';
 import { CategoriaService } from './../service/categoria.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-categoria',
@@ -17,7 +18,8 @@ export class CategoriaComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    private http: HttpClient
     
   ) { }
 
@@ -40,6 +42,7 @@ export class CategoriaComponent implements OnInit {
      }
 
   cadastrar(){
+     
      this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria)=>{
        this.categoria = resp
        alert('Tema cadastrado com sucesso!')

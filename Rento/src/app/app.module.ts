@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CategoriaComponent } from './categoria/categoria.component';
     HomeComponent,
     ServicosComponent,
     SobreComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

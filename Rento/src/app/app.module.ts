@@ -13,6 +13,9 @@ import { HomeComponent } from './home/home.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { CategoriaEditComponent } from './edit/categoria-edit.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+
 import { AdminComponent } from './admin/admin.component';
 
 
@@ -27,6 +30,8 @@ import { AdminComponent } from './admin/admin.component';
     ServicosComponent,
     SobreComponent,
     CategoriaComponent,
+    CategoriaEditComponent,
+    CategoriaDeleteComponent
     AdminComponent
   ],
   imports: [

@@ -8,7 +8,7 @@ import { CategoriaService } from './../service/categoria.service';
   selector: 'app-categoria',
   templateUrl: './categoria.component.html',
   styleUrls: ['./categoria.component.css']
-})
+})  
 
 export class CategoriaComponent implements OnInit {
 
@@ -24,10 +24,12 @@ export class CategoriaComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
     if(environment.token == ''){
-    this.router.navigate(['/logar'])
+    this.router.navigate(['/home'])
   }
+
   this.findAllCategorias()
 }
+
  findAllCategorias(){
        this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
          this.listaCategoria = resp

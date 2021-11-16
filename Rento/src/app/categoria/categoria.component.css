@@ -1,0 +1,191 @@
+/*primeiras configurações do corpo*/
+
+/*background*/
+.fundo{
+    background: url(./img/fundo2.svg);
+  }
+  
+  /*=============================================================================categoria*/
+  /*caixa*/
+  .categoria {
+    margin-top: 50px;
+    padding: 15px 100px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 75%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F4EFE9;
+  }
+  /*texto*/
+  h1 {
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    /* idêntico à altura da caixa */
+    letter-spacing: 0.215em;
+    color: #111111;
+  }
+  
+  h2 {
+    margin-left: 50px;
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    color: #111111;
+  }
+  
+  /*=======================================================================categoria cards*/
+  body::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+    height: 100%;
+  }
+  ::selection{
+    background:    #FF676D;
+    color: #fff;
+  }
+  /*==================================================padding dos cards em relação a caixa*/
+  .container{
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px 0;
+  }
+  .container .main-card{
+    margin-left: 33px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 200%;
+    transition: 1s;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+  .container .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+  }
+  .main-card .cards .card{
+    width: calc(100% / 3 - 10px);
+    background: #111111;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card:hover{
+    transform: translateY(-15px);
+  }
+  .cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cards .card .content .img{
+    height: 100%;
+    width: 250px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-bottom: 14px;
+  }
+  .card .content .img img{
+    height: 100%;
+    width: 90%;
+    border-radius: 30%;
+    object-fit: cover;
+  }
+  .card .content .nome{
+    font-size: 15px;
+    font-weight: 500;
+    color: #FF676D !important;
+  }
+  .job{
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF676D !important;
+  }
+  .card .content .media-icons{
+    margin-top: 10px;
+    display: flex;
+  }
+  .media-icons a{
+    text-align: center;
+    line-height: 33px;
+    height: 35px;
+    width: 35px;
+    margin: 0 4px;
+    font-size: 14px;
+    color: #FFF;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: #FF676D;
+    transition: all 0.3s ease;
+  }
+  .media-icons a:hover{
+    color: #FF676D;
+    background-color: #fff;
+    border-color: #FF676D;
+  }
+   .container .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .button label{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #111111;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .button label.active{
+    width: 35px;
+  }
+  #one:checked ~ .button .one{
+    width: 35px;
+  }
+  #one:checked ~ .button .two{
+    width: 15px;
+  }
+  #two:checked ~ .button .one{
+    width: 15px;
+  }
+  #two:checked ~ .button .two{
+    width: 35px;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .main-card .cards .card{
+      margin: 20px 0 10px 0;
+      width: calc(100% / 2 - 10px);
+    }
+  }
+  @media (max-width: 600px) {
+    .main-card .cards .card{
+      /* margin: 20px 0 10px 0; */
+      width: 100%;
+    }
+  }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './admin/admin.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriaEditComponent } from './edit/categoria-edit.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'categoria', component: CategoriaComponent},
   {path: 'categoria-edit/:id', component: CategoriaEditComponent},
   {path: 'categoria-delete/:id', component: CategoriaEditComponent}
+  {path: 'admin', component: AdminComponent}
   
 ];
 

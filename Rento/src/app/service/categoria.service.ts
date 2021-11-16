@@ -26,7 +26,9 @@ export class CategoriaService {
     return this.http.get<Categoria>(`https://rentogen.herokuapp.com/categoria/${id}`, this.token)
   }
 
-  postCategoria(categoria: Categoria): Observable<Categoria> {
+  postCategoria(categoria: Categoria): Observable<Categoria> {  this.token = {
+    headers: new HttpHeaders().set('Authorization', environment.token)
+  }
     return this.http.post<Categoria>('https://rentogen.herokuapp.com/categoria', categoria, this.token)
   }
   putCategoria(categoria: Categoria): Observable<Categoria> {

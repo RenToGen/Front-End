@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       environment.id = this.usuarioLogin.id
 
       console.log(environment.token)
-      alert('Usuario logado com sucesso!')
+      //alert('Usuario logado com sucesso!')
 
       this.router.navigate(['/home'])
     }, erro =>{

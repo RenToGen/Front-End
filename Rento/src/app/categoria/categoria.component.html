@@ -95,99 +95,41 @@
 	  <!-- end slider section -->
 	<div class="fundo">
 		<div class="categoria">
-			<h1>EDIÇÃO</h1>
-			<h2>MÉDIA DE PREÇO: R$8,00</h2>
-			<!--cards-->
-			<div class="container">
-				<input type="radio" name="dot" id="one">
-				<input type="radio" name="dot" id="two">
-				<div class="main-card">
-				  <div class="cards">
+
+	<div *ngFor='let item of listaCategoria' class="primeira-categoria">
+		<h2>{{item.descricao}}</h2>
+		<h3>R$ {{item.valor}}</h3>
+		<div>
+			<button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]">Editar</button>
+			<button class="btn btn-danger" [routerLink]="['/categoria-delete', item.id]">Apagar</button>
+		</div>
+		<div class="container">
+			<input type="radio" name="dot" id="one">
+			<input type="radio" name="dot" id="two">
+			<div class="main-card">
+				<div class="cards">
 					<div class="card">
-					 <div class="content">
-					   <div class="img">
-						<img src="https://image.freepik.com/free-photo/video-maker-editing-movie-using-post-production-software-working-creative-agency-pc-with-green-screen-chroma-key-mock-up-isolated-display_482257-5434.jpg" alt="">
-					   </div>
-					   <div class="details">
-						 <div class="job">Edição de Video</div>
-						 <div class="nome">Lucas Carlos</div>
-					   </div>
-					   <div class="media-icons">
-						 <a href="#"><i class="fab fa-opencart"></i></a>
-					   </div>
-					 </div>
-					</div>
-					<div class="card">
-					 <div class="content">
-					   <div class="img">
-						<!--- <img src="images/img2.jpg" alt="">--->
-					   </div>
-					   <div class="details">
-						 <div class="job">Jasmine Carter</div>
-						 <div class="nome">UI Designer</div>
-					   </div>
-					   <div class="media-icons">
-						<a href="#"><i class="fab fa-opencart"></i></a>
-					   </div>
-					 </div>
-					</div>
-					<div class="card">
-					 <div class="content">
-					   <div class="img">
-						<!-- <img src="images/img3.jpg" alt="">---->
-					   </div>
-					   <div class="details">
-						 <div class="job">Justin Chung</div>
-						 <div class="nome">Web Devloper</div>
-					   </div>
-					   <div class="media-icons">
-						<a href="#"><i class="fab fa-opencart"></i></a>
-					   </div>
-					 </div>
+						<div class="content">
+							<div class="img">
+								<img src="https://i.imgur.com/F5iVgfe.jpg" alt="">
+							</div>
+							<div class="details">
+								<div class="name">Andrew Neil</div>
+								<div class="job">Web Designer</div>
+							</div>
+							<div class="media-icons">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+								<a href="#"><i class="fab fa-youtube"></i></a>
+							</div>
+						</div>
+
 					</div>
 				  </div>
 				  <div class="cards">
 					<div class="card">
-					 <div class="content">
-					   <div class="img">
-						 <!---<img src="images/img4.jpg" alt="">--->
-					   </div>
-					   <div class="details">
-						 <div class="job">Appolo Reef</div>
-						 <div class="nome">Web Designer</div>
-					   </div>
-					   <div class="media-icons">
-						<a href="#"><i class="fab fa-opencart"></i></a>
-					   </div>
-					 </div>
-					</div>
-					<div class="card">
-					 <div class="content">
-					   <div class="img">
-						 <!--<img src="images/img5.jpg" alt="">---->
-					   </div>
-					   <div class="details">
-						 <div class="job">Adrina Calvo</div>
-						 <div class="nome">UI Designer</div>
-					   </div>
-					   <div class="media-icons">
-						<a href="#"><i class="fab fa-opencart"></i></a>
-					   </div>
-					 </div>
-					</div>
-					<div class="card">
-					 <div class="content">
-					   <div class="img">
-						 <!--<img src="images/img6.jpeg" alt="">--->
-					   </div>
-					   <div class="details">
-						 <div class="job">Nicole Lewis</div>
-						 <div class="nome">Web Devloper</div>
-					   </div>
-					   <div class="media-icons">
-						<a href="#"><i class="fab fa-opencart"></i></a>
-					   </div>
-					 </div>
+
 					</div>
 				  </div>
 				</div>

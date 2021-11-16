@@ -38,4 +38,8 @@ export class AuthService {
     } 
     return ok
   }
+
+  getByIdUsuario(id: number): Observable<Usuario>{
+    return this.http.get<Usuario>(`https://rentogen.herokuapp.com/usuarios/${id}`)
+  }
 }

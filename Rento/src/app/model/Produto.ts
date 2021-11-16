@@ -1,5 +1,5 @@
 import { Categoria } from "./Categoria"
-import { Usuario } from "./Usuario"
+import {Usuario} from "./Usuario"
 
 export class Produto{
     public id: number
@@ -7,4 +7,5 @@ export class Produto{
     public apresentacao: string
     public usuario: Usuario
     public categoria: Categoria
+    public imagem: string
 }

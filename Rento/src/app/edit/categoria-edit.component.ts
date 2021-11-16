@@ -54,7 +54,7 @@ export class CategoriaEditComponent implements OnInit {
 
     this.categoriaService.putCategoria(this.categoria).subscribe((resp: Categoria) => {
       this.categoria = resp
-      alert('Categoria incluída com sucesso!')
+      alert('Categoria atualizada com sucesso!')
 
     })
     console.log(this.categoria)

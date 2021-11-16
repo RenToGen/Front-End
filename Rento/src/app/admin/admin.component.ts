@@ -4,6 +4,9 @@ import { Categoria } from '../model/Categoria';
 import { CategoriaService } from '../service/categoria.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { Produto } from '../model/Produto';
+import { Usuario } from '../model/Usuario';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-admin',
@@ -12,6 +15,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AdminComponent implements OnInit {
 
+  produto: Produto = new Produto()
+  listaProduto: Produto[]
+  produtoService: ProdutoService
+  usuario: Usuario = new Usuario()
+  idUsuario = environment.id
   nome = ''
   foto = ''
   categoria: Categoria = new Categoria()
@@ -34,7 +42,8 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
     this.findAllCategorias()
-    
+    this.getAllProduto()
+
     
   }
   findAllCategorias(){
@@ -96,6 +105,26 @@ export class AdminComponent implements OnInit {
     })
     console.log(this.categoria)
   }
+  
+  publicar(){
+  this.categoria.id = this.idCategoria
+  this.produto.categoria = this.categoria
+
+  this.usuario.id = this.idUsuario
+  this.produto.usuario = this.usuario
+
+  this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
+    this.produto = resp
+    alert('Serviço publicado com sucesso!')
+    this.produto = new Produto()
+    this.produtoService.getAllProduto()
+  })  
 
 }
-
+getAllProduto(){
+  this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
+    this.listaProduto = resp
+  })
+  console.log(this.listaProduto)
+}
+}

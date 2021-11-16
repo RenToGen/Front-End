@@ -1,0 +1,18 @@
+<div class="categoria pt-5 mt-5">
+    <div *ngFor='let item of listaProduto' class="primeira-categoria">
+        <!-- <h2> class="titulo-categoria">{{item.nomeServico}}</h2> -->
+        <p>{{item.nomeServico}}</p>
+        <p>{{item.id}}</p>
+        <p>{{item.apresentacao}}</p>
+
+        <img src="{{item.imagem}}" alt="">
+
+
+        <!-- <h2 class="valor-categoria">R$ {{item.categoria.valor}}</h2> -->
+        <hr>
+        <button class="btn" (click)='nossoLog()'>ola</button>
+    </div>
+
+
+
+</div>

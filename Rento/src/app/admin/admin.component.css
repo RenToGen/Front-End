@@ -265,3 +265,38 @@ td {
     cursor: pointer
 }
 
+/* criar categoria*/
+.categoria {
+  margin-top: 50px;
+  padding: 15px 100px;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 75%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #F4EFE9;
+}
+/*texto*/
+.titulo-categoria {
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  /* idêntico à altura da caixa */
+  letter-spacing: 0.215em;
+  color: #111111;
+}
+
+.valor-categoria {
+  margin-left: 50px;
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 37px;
+  color: #111111;
+}

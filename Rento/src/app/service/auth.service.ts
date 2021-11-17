@@ -50,5 +50,33 @@ export class AuthService {
     return ok
   }
 
- 
+  adm(){
+    let ok = false
+  
+    if(environment.tipoCadastro == '2'){
+      ok = true
+    } 
+    return ok
+  }
+  cliente(){
+    let ok = false
+  
+    if(environment.tipoCadastro == '1'){
+      ok = true
+    } 
+    return ok
+  }
+
+  prestador(){
+    let ok = false
+  
+    if(environment.tipoCadastro == '3'){
+      ok = true
+    } 
+    return ok
+  }
+  getByIdUsuario(id: number): Observable<Usuario>{
+    return this.http.get<Usuario>(`https://rentogen.herokuapp.com/usuarios/${id}`)
+  }
+
 }

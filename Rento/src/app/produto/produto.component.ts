@@ -38,7 +38,8 @@ idUsuario = environment.id
     private router: Router,
     private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
-    private authService: AuthService
+    private authService: AuthService,
+    private route: ActivatedRoute,
     // codethi
 
     
@@ -83,18 +84,28 @@ findByIdUsuario(){
 }
 
 publicar(){
-  this.categoria.id = this.idCategoria
-  this.produto.categoria = this.categoria
+  // this.categoria.id = this.idCategoria
+  this.categoria.id = 2
+  
+  // this.produto.categoria = this.categoria
 
   this.usuario.id = this.idUsuario
   this.produto.usuario = this.usuario
+  console.log(this.produto)
 
   this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
     this.produto = resp
-    alert('Serviço publicado com sucesso!')
-    this.produto = new Produto()
-    this.getAllProduto()
+    
+    alert('Postagem atualizada com sucesso!')
+    this.router.navigate(['/admin'])
   })
+
+  // this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
+  //   this.produto = resp
+  //   alert('Serviço publicado com sucesso!')
+  //   this.produto = new Produto()
+  //   this.getAllProduto()
+  // })
   // codethi
 
 

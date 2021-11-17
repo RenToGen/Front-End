@@ -20,6 +20,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
     AdminComponent,
     ProdutoComponent,
     ProdutoEditComponent,
-    ProdutoDeleteComponent
+    ProdutoDeleteComponent,
+    UsuarioEditComponent
   ],
   imports: [
     BrowserModule,

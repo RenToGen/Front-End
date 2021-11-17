@@ -84,10 +84,9 @@ findByIdUsuario(){
 }
 
 publicar(){
-  // this.categoria.id = this.idCategoria
-  this.categoria.id = 2
-  
-  // this.produto.categoria = this.categoria
+  this.categoria.id = this.idCategoria
+  this.produto.categoria = this.categoria
+
 
   this.usuario.id = this.idUsuario
   this.produto.usuario = this.usuario
@@ -95,7 +94,8 @@ publicar(){
 
   this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
     this.produto = resp
-    
+    console.log(this.produto)
+    this.getAllProduto()
     alert('Postagem atualizada com sucesso!')
     this.router.navigate(['/admin'])
   })

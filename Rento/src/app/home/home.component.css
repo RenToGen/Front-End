@@ -1,23 +1,28 @@
+body {
+    margin: 0;
+}
+
 .ml-200 {
     margin-left: 250px;
 }
 
 .mr-200 {
-    margin-right: 250px;
+    margin-: 250px;
 }
 
 .pt-100 {
     padding-top: 100px;
 }
 
-.wt-30{
+.wt-30 {
     width: 35%;
 }
-.wt-200{
+
+.wt-200 {
     width: 200px;
 }
 
-.bg-amarelo{
+.bg-amarelo {
     background-color: #F2A410;
 }
 
@@ -35,37 +40,85 @@
     font-family: Anton-Regular;
     src: url("../../assets/font/Anton-Regular.ttf");
 }
-.poppins-bold{
+
+.poppins-bold {
     font-family: Poppins-Bold;
     letter-spacing: 3.5px;
+    text-align: left;
 }
 
-.poppins-regular{
+.poppins-regular {
     font-family: Poppins-Regular;
+    text-align: left;
 }
 
-.anton{
+.anton {
     font-family: Anton-Regular;
     letter-spacing: 3px;
 }
 
-.bg-preto{
+.bg-preto {
     background-color: black;
 }
 
-.text-black{
-   color: black;
+.text-black {
+    color: black;
 }
 
-.text-amarelo{
-    color:#F2A410
+.text-amarelo {
+    color: #F2A410
 }
 
 .responsive-image {
     height: auto;
     width: 70%;
-  }
-  .row {
+}
+
+.row {
     margin-left: 0;
-    margin-right: 0;
+    margin-: 0;
+}
+
+/*=================apresentacao*/
+.apresentacao {
+    background-image: url("https://i.imgur.com/op1KHK4.png");
+    width: 1350px;
+    height: 1114px;
+}
+
+/*========================newsletter*/
+#email {
+    position: relative;
+    width: 800px;
+    height: 84px;
+    left: 257px;
+    margin-top: 150px;
+    /* top: 1252px; */
+    border: 0px;
+    background: rgba(244, 239, 233, 0.7);
+}
+
+.newsletter {
+    background-image: url("https://image.freepik.com/free-photo/medium-shot-students-with-laptop_23-2148950529.jpg");
+    margin-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+/*========================parceiros*/
+.titulo3 {
+    position: absolute;
+    width: 711px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 79px;
+    text-align: center;
+    letter-spacing: 0.465em;
+    color: #F4EFE9;
+}
+/*================================parceiros*/
+.parceiros{
+    background-image: url("https://i.imgur.com/Q0jC6SD.png");
 }

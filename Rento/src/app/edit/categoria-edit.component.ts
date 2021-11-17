@@ -24,7 +24,6 @@ export class CategoriaEditComponent implements OnInit {
     private categoriaService: CategoriaService,
     private router: Router,
     private route: ActivatedRoute,
-    private http: HttpClient
   ) {
 
   }

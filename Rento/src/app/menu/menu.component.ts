@@ -16,38 +16,40 @@ export class MenuComponent implements OnInit {
 
   nome = ''
   foto = ''
+  id = environment.id
 
-  constructor(    
-    
+  constructor(
+
     private router: Router,
     private auth: AuthService
+  ) { }
 
+  ngOnInit() {
 
-    ) { }
-
-  ngOnInit(){
   }
 
-  logado(){
+  logado() {
     let ok = false
-  
-    if(environment.token != ''){
+
+    if (environment.token != '') {
       ok = true
       this.recebeDados()
-    } 
+    }
     return ok
   }
 
-  deslogado(){
+
+
+  deslogado() {
     let ok = false
-  
-    if(environment.token == ''){
+
+    if (environment.token == '') {
       ok = true
-    } 
+    }
     return ok
   }
 
-  sair(){
+  sair() {
     this.router.navigate(['/home'])
     environment.token = ''
     environment.nome = ''
@@ -55,11 +57,11 @@ export class MenuComponent implements OnInit {
     environment.id = 0
 
   }
-  recebeDados(){
+  recebeDados() {
     this.nome = environment.nome
     this.foto = environment.foto
   }
-
+ 
 }
 
 

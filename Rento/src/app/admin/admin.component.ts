@@ -44,8 +44,9 @@ export class AdminComponent implements OnInit {
     this.findAllCategorias()
     this.getAllProduto()
 
-    
+
   }
+
   findAllCategorias(){
     this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
       this.listaCategoria = resp

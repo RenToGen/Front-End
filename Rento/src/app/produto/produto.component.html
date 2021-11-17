@@ -16,7 +16,7 @@
             </div>
         </div>
         
-        <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]='produto.id'>
+        <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]='idCategoria' (change)=findByIdCategoria>
             <option>Selecione uma Categoria</option>
             <option *ngFor='let item of listaCategoria' value='{{item.id}}'>{{item.categoria}}</option>
             

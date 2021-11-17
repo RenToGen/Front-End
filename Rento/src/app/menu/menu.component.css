@@ -22,6 +22,12 @@
    
 }
 
+/* body.smaller nav a img{
+    height: 60px;  
+    image-rendering: 40px !important;  
+  } */
+
+
 .fs-13{
     font-family: MonumentExtended;
     font-size: 10pt;
@@ -43,6 +49,8 @@
     border-radius: 25px;
     
 }
+
+
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -51,3 +59,27 @@
     margin-left: 0;
     margin-right: 0;
 }
+
+header nav{
+    display: inline-block;
+    margin-right: 30px;
+    float: right;
+  }
+  
+  header nav a{
+    line-height: 100px;
+    margin-left: 50px;
+    color: #dddddd;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none !important;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #f36b21;
+  }

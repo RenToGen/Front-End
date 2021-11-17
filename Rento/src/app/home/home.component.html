@@ -16,31 +16,64 @@
 
 
 <body class="bg-amarelo">
+  <header>
+    <div class="container-fluid poppins-regular pt-100">
+      <div class="d-flex justify-content-around text-xs-center align-items-center mt-5 pt-5">
 
-  <div class="container-fluid poppins-regular pt-100">
-    <div class="d-flex justify-content-around text-xs-center align-items-center mt-5 pt-5">
-
-      <div class="row text-center text-xs-center text-sm-left text-md-left align-items-center">
-        <div class="col-12 col-sm-6 text-center ">
-          <div class="h3 poppins-bold">SUA INSERÇÃO EM UM NOVO MERCADO DE TRABALHO ONLINE!</div>
-          <div class="poppins-regular ">Com estudos, discussão e prática em uma plataforma que te leva a construir uma nova
-            história.</div>
-        </div>
+        <div class="row text-center text-xs-center text-sm-left text-md-left align-items-center">
+          <div class="col-12 col-sm-6 text-center ">
+            <div class="h3 poppins-bold">SUA INSERÇÃO EM UM NOVO MERCADO DE TRABALHO ONLINE!</div>
+            <div class="poppins-regular ">Com estudos, discussão e prática em uma plataforma que te leva a construir uma
+              nova
+              história.</div>
+          </div>
           <div class="col-12 col-sm-6 ">
-            <img src="https://i.imgur.com/wG0MtRf.png" alt="Homem segurando notebook" width="100%"
+            <img src="https://i.imgur.com/wG0MtRf.png" alt="Homem segurando notebook" width="80%"
               class="pt-5 pb-5 img-fluid">
           </div>
+        </div>
+
       </div>
-
+      <div class="d-flex justify-content-center pb-5">
+        <button type="button" routerLink='/cursos'
+          class="btn border bg-preto text-amarelo btn-lg mr-1 anton wt-200 rounded-0">CURSOS</button>
+        <button type="button" routerLink='/servicos'
+          class="btn border bg-amarelo text-black btn-lg mr-1 anton wt-200 rounded-0">CONTRATAR</button>
+      </div>
     </div>
-    <div class="d-flex justify-content-center pb-5" >
-      <button  type="button" routerLink='/cursos'
-        class="btn border bg-preto text-amarelo btn-lg mr-1 anton wt-200 rounded-0">CURSOS</button>
-      <button type="button" routerLink='/servicos'
-        class="btn border bg-amarelo text-black btn-lg mr-1 anton wt-200 rounded-0">CONTRATAR</button>
-    </div>
-  </div>
-
+  </header>
+  <main>
+    <section class="apresentacao">
+      <div class="container-fluid poppins-regular pt-100">
+        <div class="d-flex justify-content-around text-xs-center align-items-center mt-5 pt-5">
+          <div class="row text-center text-xs-center text-sm-left text-md-left align-items-center">
+            <div class="col-12 col-sm-6 text-center ">
+              <div class="h3 poppins-bold">COMO FUNCIONA</div>
+              <div class="poppins-regular ">Com estudos, discussão e prática em uma plataforma que te leva a construir
+                uma
+                nova
+                história.</div>
+            </div>
+            <div class="col-12 col-sm-6 ">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VW_UHYs3giU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+              <form>
+                <input type="email" id="email" onkeyup='validaEmail()'>
+                <div class="validaEmail" id='txtEmail'></div>
+              </form>
+    </section>
+    <section class="parceiros">
+      <h1>NOSSOS PARCEIROS</h1>
+    </section>
+  </main>
 </body>
 
 </html>

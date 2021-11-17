@@ -25,7 +25,7 @@ export class CategoriaComponent implements OnInit {
 
   ngOnInit() {
     // retirar apos testes
-    environment.token = "Basic Z3VzdGF2b0B0ZXN0ZS5jb206MTIzNDU2Nzg5"
+    // environment.token = "Basic Z3VzdGF2b0B0ZXN0ZS5jb206MTIzNDU2Nzg5"
     // retirar apos testes
     window.scroll(0,0)
     if(environment.token == ''){

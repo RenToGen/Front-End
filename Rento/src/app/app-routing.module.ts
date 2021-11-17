@@ -12,6 +12,9 @@ import { ProdutoComponent } from './produto/produto.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
+import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
+
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -28,7 +31,9 @@ const routes: Routes = [
   {path: 'categoria-edit/:id', component: CategoriaEditComponent},
   {path: 'categoria-delete/:id', component: CategoriaDeleteComponent},
   {path: 'admin', component: AdminComponent},
-  {path: 'produto', component: ProdutoComponent}
+  {path: 'produto', component: ProdutoComponent},
+  {path: 'produto-edit/:id', component: ProdutoEditComponent},
+  {path: 'produto-delete/:id', component: ProdutoDeleteComponent}
   
 ];
 

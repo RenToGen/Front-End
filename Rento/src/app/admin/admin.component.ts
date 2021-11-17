@@ -21,7 +21,7 @@ export class AdminComponent implements OnInit {
   usuario: Usuario = new Usuario()
   idUsuario = environment.id
   nome = ''
-  foto = ''
+  foto = 't'
   categoria: Categoria = new Categoria()
   listaCategoria: Categoria[]
   idCategoria: number
@@ -44,8 +44,9 @@ export class AdminComponent implements OnInit {
     this.findAllCategorias()
     this.getAllProduto()
 
-    
+
   }
+
   findAllCategorias(){
     this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
       this.listaCategoria = resp
@@ -84,27 +85,13 @@ export class AdminComponent implements OnInit {
 
     this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria) => {
       this.categoria = resp
-      alert('Categoria atualizado com sucesso!')
+      alert(' Categoria incluída com sucesso!')
       this.router.navigate(['/servicos'])
 
     })
-    console.log(this.categoria)
-  }
-  atualizar() {
     
-    this.categoriaCategoria = this.categoria.categoria
-    this.descricaoCategoria = this.categoria.descricao
-    this.idCategoria = this.categoria.id
-    this.valorCategoria = this.categoria.valor
-    this.produtosCategoria = this.categoria.produto
-
-    this.categoriaService.putCategoria(this.categoria).subscribe((resp: Categoria) => {
-      this.categoria = resp
-      alert('Categoria incluída com sucesso!')
-
-    })
-    console.log(this.categoria)
   }
+ 
   
   publicar(){
   this.categoria.id = this.idCategoria

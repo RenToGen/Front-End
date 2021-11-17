@@ -279,15 +279,10 @@ td {
 }
 /*texto*/
 .titulo-categoria {
-  margin-left: 50px;
-  margin-right: 20px;
-  margin-top: 50px;
+  
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 45px;
-  /* idêntico à altura da caixa */
-  letter-spacing: 0.215em;
+  
   color: #111111;
 }
 

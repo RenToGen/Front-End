@@ -112,35 +112,45 @@
 	<!--cards-->
 	<div class="fundo">
 		<div class="categoria">
-			<div *ngFor='let item of listaCategoria' class="primeira-categoria">
-				<h1 class="h1categoria">{{item.descricao}}</h1>
-				<h2 class="valor-categoria">R$ {{item.valor}}</h2>
-				<div>
-					<!-- <button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]">Editar</button>
-					<button class="btn btn-danger" [routerLink]="['/categoria-delete', item.id]" data-toggle="modal"
-						data-target="#modalApagar">Apagar</button> -->
-					<div class="modal" id='modalApagar' tabindex="-1" role="dialog">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<app-categoria-delete></app-categoria-delete>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- TesteGus -->
-				<div *ngFor='let item of listaCategoria'  >
+			<div *ngFor='let item of listaCategoria' class="primeira-categoria col-md-12 ">
+				<div class="col-md-12">
 					<h1 class="h1categoria">{{item.descricao}}</h1>
+					<h2 class="valor-categoria">Valor por serviço: R$ {{item.valor}}</h2>
+					<div>
+						<!-- <button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]">Editar</button>
+					<button class="btn btn-danger" [routerLink]="['/categoria-delete', item.id]" data-toggle="modal"
+						data-target="#modalApagar">Apagar</button> -->
+						<div class="modal" id='modalApagar' tabindex="-1" role="dialog">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<app-categoria-delete></app-categoria-delete>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TesteGus -->
+				<div class="col-md-12  d-flex">
+					<div *ngFor='let item1 of item.produto'>
+						<div class="col-md-6 ml-1">
+							<h2 class="valor-categoria">{{item1.nomeServico}}</h2>
+							<img src="{{item1.imagem}}" alt="" width="100%">
+							<!-- <h2 class="valor-categoria">{{item1.apresentacao}}</h2> -->
 
 
 
 
+						</div>
+
+
+					</div>
 				</div>
 
 
 
 
 				<!-- TesteGus -->
-				<div class="container">
+				<!-- <div class="container">
 					<input type="radio" name="dot" id="one">
 					<input type="radio" name="dot" id="two">
 					<div class="main-card">
@@ -166,54 +176,10 @@
 						<label for="one" class="active one"></label>
 						<label for="two" class="two"></label>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
-		<div class="categoria">
-			<div *ngFor='let item of listaCategoria' class="primeira-categoria">
-				<h1 class="h1categoria">{{item.descricao}}</h1>
-				<h2 class="valor-categoria">R$ {{item.valor}}</h2>
-				<div>
-					<!-- <button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]">Editar</button>
-					<button class="btn btn-danger" [routerLink]="['/categoria-delete', item.id]" data-toggle="modal"
-						data-target="#modalApagar">Apagar</button> -->
-					<div class="modal" id='modalApagar' tabindex="-1" role="dialog">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<app-categoria-delete></app-categoria-delete>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<input type="radio" name="dot" id="one">
-					<input type="radio" name="dot" id="two">
-					<div class="main-card">
-						<div class="cards">
-							<div class="card">
-								<div class="content">
-									<div class="img">
-										- <img
-											src="https://image.freepik.com/free-photo/video-maker-editing-movie-using-post-production-software-working-creative-agency-pc-with-green-screen-chroma-key-mock-up-isolated-display_482257-5434.jpg"
-											alt="">
-									</div>
-									<div class="details">
-										<div class="name">Andrew Neil</div>
-										<div class="job">Web Designer</div>
-									</div>
-									<div class="media-icons">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="button">
-						<label for="one" class="active one"></label>
-						<label for="two" class="two"></label>
-					</div>
-				</div>
-			</div>
-		</div>
+
 	</div>
 	<header>
 		<svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20962 10601">

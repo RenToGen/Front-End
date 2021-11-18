@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: MonumentExtended;
     src: url("../../assets/font/MonumentExtended-Regular.otf") format("OpenType");
@@ -19,13 +18,10 @@
     margin-right: 20px;
     margin-left: 12px;
     padding-top: 25px;
-   
+
 }
 
-/* body.smaller nav a img{
-    height: 60px;  
-    image-rendering: 40px !important;  
-  } */
+
 
 
 .fs-13{
@@ -36,7 +32,7 @@
    }
 
 .bt-nv {
-    border-right-color:  #DE3411;  
+    border-right-color:  #DE3411;
     border-left-color: #DE3411 ; 
     border-bottom-color:#FD7B83; 
     border-top-color:#FD7B83;
@@ -47,13 +43,14 @@
     letter-spacing: 3px;
     color: #F2A410;
     border-radius: 25px;
-    
+
 }
 
 
 .img-fluid {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
+    margin-left: 50px;
 }
 .row {
     margin-left: 0;
@@ -65,7 +62,7 @@ header nav{
     margin-right: 30px;
     float: right;
   }
-  
+
   header nav a{
     line-height: 100px;
     margin-left: 50px;
@@ -79,7 +76,7 @@ header nav{
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-  
+
   header nav a:hover {
     color: #f36b21;
   }

@@ -4,6 +4,8 @@ import { Categoria } from './../model/Categoria';
 import { environment } from './../../environments/environment.prod';
 import { CategoriaService } from './../service/categoria.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Produto } from '../model/Produto';
+import { ProdutoService } from '../service/produto.service'; //
 
 @Component({
   selector: 'app-categoria',
@@ -16,16 +18,21 @@ export class CategoriaComponent implements OnInit {
   categoria: Categoria = new Categoria()
   listaCategoria: Categoria[]
 
+  idCategoria: number // teste
+  produto: Produto = new Produto()
+  listaProduto: Produto[]
+
   constructor(
     private router: Router,
     private categoriaService: CategoriaService,
-    private http: HttpClient
+    private http: HttpClient,
+    private produtoService: ProdutoService,
     
   ) { }
 
   ngOnInit() {
     // retirar apos testes
-    // environment.token = "Basic Z3VzdGF2b0B0ZXN0ZS5jb206MTIzNDU2Nzg5"
+    environment.token = "Basic Z3VzdGF2b0B0ZXN0ZS5jb206MTIzNDU2Nzg5"
     // retirar apos testes
     window.scroll(0,0)
     if(environment.token == ''){
@@ -33,6 +40,7 @@ export class CategoriaComponent implements OnInit {
   }
 
   this.findAllCategorias()
+  this.getAllProduto()
 }
 
  findAllCategorias(){
@@ -49,6 +57,18 @@ export class CategoriaComponent implements OnInit {
        this.findAllCategorias()
        this.categoria = new Categoria()
      })
+  }
+  // teste gus
+  findByIdCategoria(){
+    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) =>{
+      this.categoria = resp
+    })
+  }
+  getAllProduto(){
+    this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
+      this.listaProduto = resp
+    })
+    console.log(this.listaProduto)
   }
 
 }

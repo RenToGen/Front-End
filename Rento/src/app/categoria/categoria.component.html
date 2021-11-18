@@ -112,104 +112,28 @@
 	<!--cards-->
 	<div class="fundo">
 		<div class="categoria">
-			<div *ngFor='let item of listaCategoria' class="primeira-categoria">
-				<h1 class="h1categoria">{{item.descricao}}</h1>
-				<h2 class="valor-categoria">R$ {{item.valor}}</h2>
-				<div>
-					<!-- <button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]">Editar</button>
-					<button class="btn btn-danger" [routerLink]="['/categoria-delete', item.id]" data-toggle="modal"
-						data-target="#modalApagar">Apagar</button> -->
-					<div class="modal" id='modalApagar' tabindex="-1" role="dialog">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<app-categoria-delete></app-categoria-delete>
+			<div *ngFor='let item of listaCategoria' class="primeira-categoria col-md-12 ">
+				<div class="col-md-12">
+					<h1 class="h1categoria">{{item.categoria}}</h1>
+					<h2 class="valor-categoria">Valor por serviço: R$ {{item.valor}}</h2>
+					<div>
+						<div class="modal" id='modalApagar' tabindex="-1" role="dialog">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<app-categoria-delete></app-categoria-delete>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- TesteGus -->
-				<div *ngFor='let item of listaCategoria'  >
-					<h1 class="h1categoria">{{item.descricao}}</h1>
-
-
-
-
-				</div>
-
-
-
-
-				<!-- TesteGus -->
-				<div class="container">
-					<input type="radio" name="dot" id="one">
-					<input type="radio" name="dot" id="two">
-					<div class="main-card">
-						<div class="cards">
-							<div class="card">
-								<div class="content">
-									<div class="img">
-										- <img
-											src="https://image.freepik.com/free-photo/video-maker-editing-movie-using-post-production-software-working-creative-agency-pc-with-green-screen-chroma-key-mock-up-isolated-display_482257-5434.jpg"
-											alt="">
-									</div>
-									<div class="details">
-										<div class="name">Andrew Neil</div>
-										<div class="job">Web Designer</div>
-									</div>
-									<div class="media-icons">
-									</div>
-								</div>
-							</div>
+				<div class="col-md-12  d-flex">
+					<div *ngFor='let item1 of item.produto'>
+						<div class="col-md-6 ml-1">
+							<h2 class="valor-categoria">{{item1.nomeServico}}</h2>
+							<img src="{{item1.imagem}}" alt="" width="100%">
+							<h2 class="valor-categoria">{{item1.apresentacao}}</h2>
 						</div>
-					</div>
-					<div class="button">
-						<label for="one" class="active one"></label>
-						<label for="two" class="two"></label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="categoria">
-			<div *ngFor='let item of listaCategoria' class="primeira-categoria">
-				<h1 class="h1categoria">{{item.descricao}}</h1>
-				<h2 class="valor-categoria">R$ {{item.valor}}</h2>
-				<div>
-					<!-- <button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]">Editar</button>
-					<button class="btn btn-danger" [routerLink]="['/categoria-delete', item.id]" data-toggle="modal"
-						data-target="#modalApagar">Apagar</button> -->
-					<div class="modal" id='modalApagar' tabindex="-1" role="dialog">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<app-categoria-delete></app-categoria-delete>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<input type="radio" name="dot" id="one">
-					<input type="radio" name="dot" id="two">
-					<div class="main-card">
-						<div class="cards">
-							<div class="card">
-								<div class="content">
-									<div class="img">
-										- <img
-											src="https://image.freepik.com/free-photo/video-maker-editing-movie-using-post-production-software-working-creative-agency-pc-with-green-screen-chroma-key-mock-up-isolated-display_482257-5434.jpg"
-											alt="">
-									</div>
-									<div class="details">
-										<div class="name">Andrew Neil</div>
-										<div class="job">Web Designer</div>
-									</div>
-									<div class="media-icons">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="button">
-						<label for="one" class="active one"></label>
-						<label for="two" class="two"></label>
 					</div>
 				</div>
 			</div>
@@ -224,7 +148,6 @@
 				d="M30706 11822c-291 731-653 1801-1548 2972-895 1170-2321 2441-4988 3026-2667 586-6574 485-10469 541s-7778 268-10906-256-5501-1784-6906-3382c-1404-1598-1840-3533-1957-4910-118-1377 82-2195 1029-2854 946-659 2637-1158 4033-1002s2495 968 3440 1630 1737 1175 2905 1086c1169-89 2714-780 3810-1332 1095-552 1740-965 2665-820s2130 848 3110 1360c980 513 1734 837 2458 672s1416-819 2179-1050 1597-40 3058 269c1461 310 3550 739 5069 1177 1519 437 2469 883 2998 1112 529 228 639 240 584 440-55 201-274 591-564 1321z" />
 		</svg>
 	</header>
-	<!--fim cards-->
 </body>
 
 </html>

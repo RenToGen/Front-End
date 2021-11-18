@@ -27,6 +27,10 @@ export class AuthService {
     return this.http.get<Usuario>(`https://rentogen.herokuapp.com/usuarios/${id}`)
   }
 
+  getAllUsuario(): Observable<Usuario>{
+    return this.http.get<Usuario>('https://rentogen.herokuapp.com/usuarios')
+  }
+
   logado(){
     let ok = false
   

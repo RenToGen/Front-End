@@ -13,10 +13,9 @@ import { AuthService } from '../service/auth.service';
 
 
 export class MenuComponent implements OnInit {
-
   nome = ''
   foto = ''
-  id = environment.id
+  
 
   constructor(
 
@@ -25,7 +24,7 @@ export class MenuComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
+    
   }
 
   logado() {

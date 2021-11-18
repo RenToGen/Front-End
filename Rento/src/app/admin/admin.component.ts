@@ -21,7 +21,7 @@ export class AdminComponent implements OnInit {
   usuario: Usuario = new Usuario()
   idUsuario = environment.id
   nome = ''
-  foto = 't'
+  foto = ''
   categoria: Categoria = new Categoria()
   listaCategoria: Categoria[]
   idCategoria: number
@@ -29,6 +29,7 @@ export class AdminComponent implements OnInit {
   descricaoCategoria: string
   valorCategoria: number
   produtosCategoria: Array<any>
+  id = environment.id
 
   constructor(
     private router: Router,

@@ -35,7 +35,7 @@ const routes: Routes = [
   {path: 'produto', component: ProdutoComponent},
   {path: 'produto-edit/:id', component: ProdutoEditComponent},
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
-  {path: 'usuario-edit/:id', component: UsuarioEditComponent}
+  {path: 'usuario-edit/:id', component: UsuarioEditComponent},
   
 ];
 

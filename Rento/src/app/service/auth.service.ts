@@ -13,14 +13,10 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
-    private router: Router,
-    private authService: AuthService
- 
-
+   private router: Router
+    // private authService: AuthService
   ) { }
-  token = {
-    headers: new HttpHeaders().set('Authorization', environment.token)
-  }
+  
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
     return this.http.post<UsuarioLogin>('https://rentogen.herokuapp.com/usuarios/logar', usuarioLogin)
   }

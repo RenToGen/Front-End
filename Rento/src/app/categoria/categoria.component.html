@@ -111,34 +111,63 @@
 	<!-- fim slider section -->
 	<!--cards-->
 	<div class="fundo">
-		<div class="categoria">
-			<div *ngFor='let item of listaCategoria' class="primeira-categoria col-md-12 ">
-				<div class="col-md-12">
-					<h1 class="h1categoria">{{item.categoria}}</h1>
-					<h2 class="valor-categoria">Valor por serviço: R$ {{item.valor}}</h2>
-					<div>
-						<div class="modal" id='modalApagar' tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<app-categoria-delete></app-categoria-delete>
+		<div *ngFor='let item of listaCategoria' class="primeira-categoria col-md-12 ">
+			<div class="categoria rounded border border-dark rounded-lg">
+				<!-- <div class="col-md-12"> -->
+				<h1 class=" mb-1">{{item.categoria}}</h1>
+				<h2 class="valor-categoria">Valor por serviço: R$ {{item.valor}}</h2>
+				<div class="card-columns">
+					<!-- <div class="col-md-12  d-flex"> -->
+					<div *ngFor='let item1 of item.produto'>
+						<div class="card ">
+							<div>
+								<img class="card-img-top" src="{{item1.imagem}}" width="100%"
+									alt="Imagem de capa do card">
+								<div class="card-body">
+									<h5 class="card-title">{{item1.nomeServico}}</h5>
+									<div>{{item1.usuario.nome}}</div>
+									<button type="button" class="btn ml-3 bt-nv mr-4 " data-toggle="modal"
+										data-target="#modalComprar"> SOLICITAR SERVIÇO
+									</button>
+									<div class="modal" id='modalComprar' tabindex="-1" role="dialog">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-body">
+													<div>{{item1.apresentacao}}</div>
+													<div>{{item.valor}}</div>
+													<div>{{item1.usuario.nome}}</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
+								<!-- <p class="card-text">{{item1.apresentacao}}</p> -->
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- TesteGus -->
-				<div class="col-md-12  d-flex">
-					<div *ngFor='let item1 of item.produto'>
-						<div class="col-md-6 ml-1">
-							<h2 class="valor-categoria">{{item1.nomeServico}}</h2>
+						<!-- <h2 class="valor-categoria">{{item1.nomeServico}}</h2>
 							<img src="{{item1.imagem}}" alt="" width="100%">
-							<h2 class="valor-categoria">{{item1.apresentacao}}</h2>
-						</div>
+							<h2 class="valor-categoria">{{item1.apresentacao}}</h2> -->
 					</div>
+
+					<!-- </div> -->
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- teste  -->
+	<!-- <div class="card-columns">
+		<div class="card">
+			<img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+			<div class="card-body">
+				<h5 class="card-title">Título do card que quebra em uma nova linha</h5>
+				<p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma
+					introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+			</div>
+		</div>
+	</div> -->
+	<!-- /teste -->
+
 	<header>
 		<svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20962 10601">
 			<path class="wave-2" fill="#DE3411"

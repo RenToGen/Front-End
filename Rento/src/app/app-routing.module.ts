@@ -37,7 +37,9 @@ const routes: Routes = [
   {path: 'produto-edit/:id', component: ProdutoEditComponent},
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
   {path: 'usuario-edit/:id', component: UsuarioEditComponent},
+
   {path: 'cursos', component: CursosComponent}
+
   
 ];
 

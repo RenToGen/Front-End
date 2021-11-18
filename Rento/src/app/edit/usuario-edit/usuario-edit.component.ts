@@ -49,6 +49,11 @@ export class UsuarioEditComponent implements OnInit {
         this.usuario = resp
         this.router.navigate(['/home'])
         alert('Usuario atualizado com sucesso!')
+        environment.token = ''
+        environment.nome = ''
+        environment.foto = ''
+        environment.id = 0
+        this.router.navigate(['/login'])
       })
     }
 
@@ -58,4 +63,5 @@ export class UsuarioEditComponent implements OnInit {
       this.usuario = resp
     })
   }
+ 
 }

@@ -8,7 +8,7 @@ body {
 }
 
 .mr-200 {
-    margin-: 250px;
+    margin-right: 250px;
 }
 
 .pt-100 {
@@ -81,7 +81,7 @@ body {
 
 .row {
     margin-left: 0;
-    margin-: 0;
+    margin-right: 0;
 }
 
 /*=================apresentacao*/

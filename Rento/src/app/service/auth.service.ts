@@ -13,9 +13,7 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
-    // private router: Router,
-    // private authService: AuthService
- 
+
 
   ) { }
   token = {

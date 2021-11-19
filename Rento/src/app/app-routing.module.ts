@@ -15,6 +15,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { CursosComponent } from './cursos/cursos.component';
 import { ContatoComponent } from './contato/contato.component';
 
 const routes: Routes = [
@@ -37,7 +38,7 @@ const routes: Routes = [
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
   {path: 'usuario-edit/:id', component: UsuarioEditComponent},
   {path: 'contato', component: ContatoComponent},
-
+  {path: 'cursos', component: CursosComponent}
   
 ];
 

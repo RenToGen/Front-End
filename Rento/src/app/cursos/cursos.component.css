@@ -1,0 +1,157 @@
+/* .linha {
+  width: 80px;
+  border-top: 2px solid;
+  magint-top: 8px;
+  } entender pq está merda de width muda o tamanho de tudo*/
+
+  /* * {
+    border: 2px solid blue;
+  } */
+
+
+h1,
+h2,
+h3,
+body,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16;
+}
+
+h1 span {
+  font-weight: bold;
+  color: aliceblue;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.profissao {
+  font-size: 24px;
+}
+
+.t60 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+  background-color: #F2A410;
+}
+header {
+  background-color: #000000;
+  padding: 32px ;
+}
+
+main {
+  display: flex;
+  padding: 40px 70px;
+}
+
+.dados {
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  margin-left: 100px;
+  padding: 30px;
+  margin-right: 50px;
+}
+
+.foto {
+  border: 4px solid #ffc700;
+  border-radius: 50%;
+  margin-bottom: 0px;
+  margin-right: 24px;
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  
+}
+
+
+.coluna-maior {
+  margin-left: 24px;
+}
+
+
+
+.coluna-maior h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  margin-left: 16px;
+}
+
+
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projetos h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  margin-left: 16px;
+  display: block;
+}
+
+.projeto {
+background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 12px;
+  width: 500px;
+}
+
+.projeto h3 {
+  font-size: 24px;
+  font-weight: bold;  
+  margin-bottom: 16px;
+}
+
+.projeto p {
+font-size: 20px;
+}
+
+.projeto a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: black;
+  color: #F2A410;
+  padding: 8px 24px;  
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 24px;
+  border-right-color:  #DE3411;
+  border-left-color: #DE3411 ; 
+  border-bottom-color:#FD7B83; 
+  border-top-color:#FD7B83;
+  border-width:2px;
+ 
+  font-size: 10pt;
+  font-family: Azeebee;
+  letter-spacing: 3px;
+}
+
+
+.coluna-maior img{
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+  margin: 24px 24px;
+  
+}
+
+

@@ -1,7 +1,7 @@
 body {
     background: #F2A410;
 }
-
+a { color: inherit; } 
 .segunda-parte {
     background-color: #E06309;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 .quarta-parte {
-    background-color: #F4EFE9;
+    background: #F2A410;    
 }
 
 .ml-200 {
@@ -109,7 +109,7 @@ p {
 }
 
 .titulo-3 {
-    margin-top: 150px;
+    margin-top: 50px;
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
@@ -119,10 +119,11 @@ p {
 }
 
 .text-3 {
+    
     font-style: normal;
     font-size: 15px;
     line-height: 30px;
-    text-align: justify;
+    text-align:center;
     color: #F4EFE9;
 }
 
@@ -135,7 +136,9 @@ p {
     height: 269px;
     left: 50px;
 }
-
+.ft-card {
+    border-radius: 50%;
+}
 .card {
     width: 450px;
     height: 250px;
@@ -147,7 +150,6 @@ p {
     position: relative;
     margin: 1.5rem;
 }
-
 .card h1 {
     text-align: center;
 }
@@ -156,14 +158,14 @@ p {
     position: absolute;
     width: 150px;
     height: 100%;
-    background: linear-gradient(#dE685E, #EE786E);
+    background: linear-gradient(#E06309, #E06309);
     transition: width 0.4s;
     overflow: hidden;
     z-index: 2;
 }
 
 .card.green .additional {
-    background: linear-gradient(#92bCa6, #A2CCB6);
+    background: linear-gradient(#E06309, #E06309);
 }
 
 .card:hover .additional {
@@ -177,7 +179,6 @@ p {
     position: relative;
     float: left;
 }
-
 .card .additional .user-card::after {
     content: "";
     display: block;
@@ -199,7 +200,6 @@ p {
     border-radius: 100px;
     white-space: nowrap;
 }
-
 .card .additional .user-card .points {
     top: 85%;
 }
@@ -222,9 +222,8 @@ p {
 }
 
 .card.green .additional .more-info h1 {
-    color: #224C36;
+    color: #fff;
 }
-
 .card .additional .coords {
     margin: 0 1rem;
     color: #fff;
@@ -232,7 +231,7 @@ p {
 }
 
 .card.green .additional .coords {
-    color: #325C46;
+    color: #fff;
 }
 
 .card .additional .coords span+span {
@@ -249,9 +248,8 @@ p {
     top: auto;
     color: #fff;
 }
-
 .card.green .additional .stats {
-    color: #325C46;
+    color: #fff;
 }
 
 .card .additional .stats>div {
@@ -274,30 +272,24 @@ p {
     font-weight: bold;
     line-height: 1.5rem;
 }
-
 .card .additional .stats div.value.infinity {
     font-size: 2.5rem;
 }
 
 .card .general {
-    width: 300px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    box-sizing: border-box;
-    padding: 1rem;
-    padding-top: 0;
+   margin-left: 60px;
+  
 }
-
+ul {
+    list-style: none;
+   }
 .card .general .more {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
     font-size: 0.9em;
+    margin-left: 30pt;
 }
-
 .position {
     margin: 100px;
 }
@@ -305,29 +297,30 @@ p {
 .card-1 {
     position: absolute;
     left: 150px;
-    top: 2900px;
+    top: 1550px;
 }
 
 .card-2 {
     position: absolute;
     left: 150px;
-    top: 3200px;
+    top: 1850px;
 }
 
 .card-3 {
     position: absolute;
     left: 711.91px;
-    top: 2800px;
+    top: 1500px;
 }
 
 .card-4 {
     position: absolute;
     left: 711.91px;
-    top: 3100px;
+    top: 1800px;
 }
 
 .card-5 {
     position: absolute;
     left: 711.91px;
-    top: 3400px;
+    top: 2100px;
 }
+

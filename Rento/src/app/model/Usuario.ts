@@ -7,5 +7,6 @@ export class Usuario {
     public tipoCadastro: string
     public senha: string
     public foto: string
+    public telefone: string
     public produto: Produto[]
 }

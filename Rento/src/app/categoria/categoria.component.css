@@ -1,7 +1,7 @@
 /*primeiras configurações do corpo*/
 
 /*background*/
-body{
+body {
   background: #F2A410;
 }
 
@@ -19,6 +19,7 @@ body{
   margin-right: auto;
   background: #F4EFE9;
 }
+
 /*texto*/
 .h1categoria {
   margin-left: 0px;
@@ -48,6 +49,7 @@ h2 {
   @include media-breakpoint-only(lg) {
     column-count: 4;
   }
+
   @include media-breakpoint-only(xl) {
     column-count: 5;
   }
@@ -58,10 +60,11 @@ h2 {
 }
 
 .border {
-  border-width:2px !important;
+  border-width: 2px !important;
 }
+
 /*=======================================================================categoria cards*/
-body::before{
+body::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -69,35 +72,41 @@ body::before{
   z-index: -1;
   height: 100%;
 }
-::selection{
-  background:    #FF676D;
+
+::selection {
+  background: #FF676D;
   color: #fff;
 }
+
 /*==================================================padding dos cards em relação a caixa*/
-.container{
+.container {
   max-width: 950px;
   width: 100%;
   overflow: hidden;
-  padding: 10px ;
+  padding: 10px;
 }
-.container .main-card{
+
+.container .main-card {
   margin-left: 0px;
   display: flex;
   justify-content: space-evenly;
   width: 200%;
   transition: 1s;
 }
-#two:checked ~ .main-card{
+
+#two:checked~.main-card {
   margin-left: -100%;
 }
-.container .main-card .cards{
+
+.container .main-card .cards {
   width: calc(100% / 2 - 10px);
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
   justify-content: space-between;
 }
-.main-card .cards .card{
+
+.main-card .cards .card {
   width: calc(100% / 3 - 10px);
   background: #111111;
   border-radius: 12px;
@@ -105,10 +114,12 @@ body::before{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.4s ease;
 }
-.main-card .cards .card:hover{
+
+.main-card .cards .card:hover {
   transform: translateY(-15px);
 }
-.cards .card .content{
+
+.cards .card .content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -116,35 +127,41 @@ body::before{
   align-items: center;
   text-align: center;
 }
-.cards .card .content .img{
+
+.cards .card .content .img {
   height: 100%;
   width: 250px;
   border-radius: 50%;
   padding: 3px;
   margin-bottom: 14px;
 }
-.card .content .img img{
+
+.card .content .img img {
   height: 100%;
   width: 90%;
   border-radius: 30%;
   object-fit: cover;
 }
-.card .content .nome{
+
+.card .content .nome {
   font-size: 15px;
   font-weight: 500;
   color: #FF676D !important;
 }
-.job{
+
+.job {
   text-align: right;
   font-size: 20px;
   font-weight: 500;
   color: #FF676D !important;
 }
-.card .content .media-icons{
+
+.card .content .media-icons {
   margin-top: 10px;
   display: flex;
 }
-.media-icons a{
+
+.media-icons a {
   text-align: center;
   line-height: 33px;
   height: 35px;
@@ -157,18 +174,21 @@ body::before{
   background: #FF676D;
   transition: all 0.3s ease;
 }
-.media-icons a:hover{
+
+.media-icons a:hover {
   color: #FF676D;
   background-color: #fff;
   border-color: #FF676D;
 }
- .container .button{
+
+.container .button {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 20px;
 }
-.button label{
+
+.button label {
   height: 15px;
   width: 15px;
   border-radius: 20px;
@@ -177,38 +197,47 @@ body::before{
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.button label.active{
+
+.button label.active {
   width: 35px;
 }
-#one:checked ~ .button .one{
+
+#one:checked~.button .one {
   width: 35px;
 }
-#one:checked ~ .button .two{
+
+#one:checked~.button .two {
   width: 15px;
 }
-#two:checked ~ .button .one{
+
+#two:checked~.button .one {
   width: 15px;
 }
-#two:checked ~ .button .two{
+
+#two:checked~.button .two {
   width: 35px;
 }
-input[type="radio"]{
+
+input[type="radio"] {
   display: none;
 }
+
 @media (max-width: 768px) {
-  .main-card .cards .card{
+  .main-card .cards .card {
     margin: 10px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
 }
+
 @media (max-width: 600px) {
-  .main-card .cards .card{
+  .main-card .cards .card {
     /* margin: 20px 0 10px 0; */
     width: 100%;
   }
 }
+
 /*==============================================================================slide seção*/
-.slider_section{
+.slider_section {
   margin-top: 100px;
   margin-left: 100px;
   margin-bottom: 100px;
@@ -244,11 +273,11 @@ input[type="radio"]{
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .heading_container h2 {
@@ -269,8 +298,8 @@ input[type="radio"]{
 
 .heading_container.heading_center {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -289,11 +318,13 @@ a:focus {
 .btn:focus {
   outline: none !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-.btn1{
+
+.btn1 {
   font-size: 20px;
 }
+
 /*header section*/
 .hero_area {
   position: relative;
@@ -303,8 +334,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .bg-box {
@@ -322,7 +353,7 @@ a:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .sub_page .hero_area {
@@ -341,9 +372,9 @@ a:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: right top;
-     object-position: right top;
+  object-position: right top;
 }
 
 .header_section {
@@ -405,8 +436,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .user_option a {
@@ -426,11 +457,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .user_option .cart_link svg {
@@ -503,17 +534,17 @@ a:focus {
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] {
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] span {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   top: 0;
 }
 
@@ -521,22 +552,22 @@ a:focus {
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   padding: 45px 0 75px 0;
 }
 
 .slider_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider_section #customCarousel1 {
@@ -555,12 +586,13 @@ a:focus {
   margin-bottom: 15px;
 }
 
-.h1title{
+.h1title {
   color: #DE3411;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
+
 .slider_section .detail-box p {
   font-size: 14px;
 }
@@ -589,11 +621,11 @@ a:focus {
   position: unset;
   margin: 0;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider_section .carousel-indicators li {
@@ -620,8 +652,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 45px;
   border-radius: 5px;
   padding: 20px 15px;
@@ -688,7 +720,7 @@ a:focus {
 
 .offer_section .box:hover .img-box img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .food_section .filters_menu {
@@ -697,10 +729,10 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   list-style-type: none;
   margin: 45px 0 20px 0;
 }
@@ -733,11 +765,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 215px;
   border-radius: 0 0 0 45px;
   margin: -1px;
@@ -772,8 +804,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .food_section .box .options a {
@@ -785,11 +817,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .food_section .box .options a svg {
@@ -800,7 +832,7 @@ a:focus {
 
 .food_section .box:hover .img-box img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .food_section .btn-box {
@@ -808,8 +840,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 45px;
 }
 
@@ -835,8 +867,8 @@ a:focus {
 
 .about_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .about_section .img-box {
@@ -845,8 +877,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about_section .img-box img {
@@ -888,8 +920,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 15px;
 }
 
@@ -899,11 +931,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 115px;
   position: relative;
   margin-top: 30px;
@@ -924,7 +956,7 @@ a:focus {
   height: 20px;
   background-color: #DE3411;
   -webkit-transform: rotate(45deg) translateX(-50%);
-          transform: rotate(45deg) translateX(-50%);
+  transform: rotate(45deg) translateX(-50%);
 }
 
 .client_section .box .detail-box {
@@ -951,8 +983,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 45px;
   padding: 0 15px;
 }
@@ -970,10 +1002,109 @@ a:focus {
   border-radius: 100%;
 }
 
-p{
+p {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   color: #111111;
 }
+
+/*==============================================================================Modal Serviço*/
+.modalEstilo {
+  background: rgba(222, 52, 17, 0.7);
+  border-radius: 50px;
+}
+
+.img-servico {
+  border-radius: 25%;
+  width: 25vw;
+}
+
+
+
+.btn-grad {
+  background-image: radial-gradient( #151404 30%, #000000 70%, #1c1b06 100%)
+}
+
+.btn-grad {
+  font-family: Azeebee;
+
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s; 
+  background-size: 200% auto;
+  color: white;
+  letter-spacing: 1.5px;
+  border-radius: 100%;
+  box-shadow: 0 0 5px #041f0c;
+  display: block;
+  width: 60%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+}
+
+
+.btnSolicitar {background-image: linear-gradient(to right, #ff2313 0%, #f8855c  51%, #f2554a  100%)}
+.btnSolicitar {
+  font-family: Azeebee;
+   margin: 1%;
+   padding: 5% 15%;
+   text-align: center;
+   font-size: 1.5vw;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 3% #a34b44;
+   border-radius: 25%;
+   display: block;
+   width: 70%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .btnSolicitar:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .fonteTitulo{
+  font-family: Azeebee;
+
+  font-size: 2.5vw;
+ }
+
+ .fonteValor{
+  font-family: Azeebee;
+
+  font-size: 2.25vw;
+ }
+
+ .fonteServico{
+  font-family: Azeebee;
+
+  font-size: 1.75vw;
+ }
+
+ .fonteUsuario{
+  font-family: Azeebee;
+
+  font-size: 1.25vw;
+ }
+
+ .fonteModal{
+  font-family: Azeebee;
+
+  font-size: 1vw;
+ }
 

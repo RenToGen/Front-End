@@ -115,6 +115,7 @@ iframe {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    overflow: hidden;
     width: 1349px;
     height: 942px;
     position: absolute;
@@ -244,7 +245,7 @@ h1 {
     background: #1111;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     height: 450px;
-    margin-top: 500px;
+    margin-top: 350px;
     overflow: hidden;
     position: absolute;
     width: 1360px;

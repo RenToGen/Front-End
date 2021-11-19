@@ -1,8 +1,8 @@
 /*primeiras configurações do corpo*/
 
 /*background*/
-.fundo ::before{
-  background: #F4EFE9;
+body{
+  background: #F2A410;
 }
 
 /*=============================================================================categoria*/
@@ -13,20 +13,20 @@
   padding: 15px 100px;
   background-repeat: no-repeat;
   position: relative;
-  width: 75%;
-  height: 600px;
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  background: #DE3411;
+  background: #F4EFE9;
 }
 /*texto*/
 .h1categoria {
-  margin-left: 50px;
+  margin-left: 0px;
   margin-right: 20px;
   margin-top: 50px;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 35px;
   line-height: 45px;
   /* idêntico à altura da caixa */
   letter-spacing: 0.215em;
@@ -34,15 +34,32 @@
 }
 
 h2 {
-  margin-left: 50px;
+  margin-left: 10px;
   margin-right: 10px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 37px;
   color: #111111;
 }
 
+/*=======================================================================Cards Gus-graebin*/
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+.card {
+  background: #FD7B83
+}
+
+.border {
+  border-width:2px !important;
+}
 /*=======================================================================categoria cards*/
 body::before{
   content: '';

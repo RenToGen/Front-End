@@ -21,6 +21,7 @@ import { ProdutoComponent } from './produto/produto.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { CursosComponent } from './cursos/cursos.component';
 import { ContatoComponent } from './contato/contato.component';
 
 
@@ -42,7 +43,8 @@ import { ContatoComponent } from './contato/contato.component';
     ProdutoEditComponent,
     ProdutoDeleteComponent,
     UsuarioEditComponent,
-    ContatoComponent
+    ContatoComponent,
+    CursosComponent
   ],
   imports: [
     BrowserModule,

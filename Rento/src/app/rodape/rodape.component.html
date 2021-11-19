@@ -19,8 +19,8 @@
 						<li><a routerLink='/home'><i class="fa fa-angle-double-right"></i>Home</a></li>
 						<li><a routerLink='/servicos'><i class="fa fa-angle-double-right"></i>Serviços</a></li>
 						<li><a routerLink='/sobre'><i class="fa fa-angle-double-right"></i>Sobre nós</a></li>
-						<li><a routerLink='/cadastrar'><i class="fa fa-angle-double-right"></i>Cadastro</a></li>
-						<li><a href="" t><i class="fa fa-angle-double-right"></i>Generation</a></li>
+						<li><a data-toggle="modal" data-target="#modalCadastro"><i class="fa fa-angle-double-right"></i>Cadastro</a></li>
+						<li><a href="https://brazil.generation.org/" t><i class="fa fa-angle-double-right"></i>Generation</a></li>
 					</ul>
 				</div>
                 <div class="col-xs-12 col-sm-4 col-md-2">
@@ -34,11 +34,18 @@
 						<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
 						<li><a target="_blank" href="https://github.com/RenToGen"><i class="fa fa-github"></i>GitHub</a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
-						<li><a href="" t><i class="fa fa-angle-double-right"></i>Generation</a></li>
+						<li><a href="https://brazil.generation.org/" t><i class="fa fa-angle-double-right"></i>Generation</a></li>
 					</ul>
 				</div>                
 			</div>
-            <hr>	
+            <hr>
+			<div class="modal" id='modalCadastro' tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<app-cadastrar></app-cadastrar>
+				  </div>
+				</div>
+			  </div>	
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt- mt-sm-3 text-center text-white">
 					<p><u><a routerLink='/home'>Rento</a></u></p>

@@ -46,7 +46,7 @@
         </li>
       </ul>
 
-      <div class="form-inline my-2 my-lg-0 ">
+      <div class="form-inline my-2 my-lg-1 ">
         <button type="button" *ngIf='deslogado()' class="btn ml-3 bt-nv mr-4 " data-toggle="modal"
           data-target="#modalLogin"> ENTRAR
         </button>
@@ -56,24 +56,24 @@
 
       <div class="form-inline my-2 my-lg-0 ">
 
-
-        <ul *ngIf='logado()' class="navbar-nav mr-auto d-flex align-items-center">
+        <ul *ngIf='logado()' class="navbar-nav d-flex align-items-center">
+        
           <div class="nav-item active">
-            <img src="{{foto}}" alt="Imagem do User" width="50px" height="50px" class="img-fluid rounded-circle">
-
+            <img src="{{foto}}" alt="Imagem do User" width="70px" height="70px" class="img-fluid rounded-circle">
+          
           </div>
-          <div class="nav-item pl-3">
+          <div class="nav-item">
 
-            <p class="m-0 font-weight-bold text-white fs-16"> {{nome} </p>
+            <p class="m-0 font-weight-bold text-white fs-16"> {{nome}} </p>
             <li class="nav-item dropdown">
 
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              <a class="nav-link dropdown-toggle fs-13 my-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-expanded="false">
                 Menu
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" routerLink="/admin">Admin</a>
-                <a class="dropdown-item" href="">Mensagens</a>
+                <a class="dropdown-item mt-3" routerLink="/admin">Admin</a>
+                <a class="dropdown-item my-3" href="">Mensagens</a>
 
 
                 <div class="dropdown-divider"></div>

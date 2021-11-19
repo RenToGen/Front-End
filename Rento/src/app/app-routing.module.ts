@@ -15,7 +15,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
-
+import { ContatoComponent } from './contato/contato.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -35,7 +35,9 @@ const routes: Routes = [
   {path: 'produto', component: ProdutoComponent},
   {path: 'produto-edit/:id', component: ProdutoEditComponent},
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
-  {path: 'usuario-edit/:id', component: UsuarioEditComponent}
+  {path: 'usuario-edit/:id', component: UsuarioEditComponent},
+  {path: 'contato', component: ContatoComponent},
+
   
 ];
 

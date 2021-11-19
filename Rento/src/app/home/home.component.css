@@ -9,7 +9,7 @@ body {
 }
 
 .mr-200 {
-    margin-: 250px;
+    margin-right: 250px;
 }
 
 .pt-100 {
@@ -49,7 +49,6 @@ body {
     letter-spacing: 3.5px;
     text-align: left;
     margin-left: 50px;
-    margin-top: 200px;
 }
 
 .poppins-regular {
@@ -82,11 +81,10 @@ body {
 
 .row {
     margin-left: 0;
-    margin-: 0;
+    margin-right: 0;
 }
 
 /*=================apresentacao*/
-@media (min-width: 700px) and (orientation: landscape) {
 .apresentacao {
     background-image: url("https://i.imgur.com/op1KHK4.png");
     width: 1370px;
@@ -94,7 +92,7 @@ body {
     position: relative;
     z-index: 3;
 }
-}
+
 iframe {
     margin-top: 200px;
     margin-right: 50px;
@@ -118,16 +116,16 @@ iframe {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 1349px;
-    height: 820px;
+    height: 942px;
     position: absolute;
-    top: 1750px;
+    top: 1650px;
     z-index: 1;
 }
 
 .news-color {
     position: relative;
     width: 1348px;
-    height: 820px;
+    height: 942px;
     background: rgba(244, 239, 233, 0.4);
 }
 
@@ -137,7 +135,7 @@ iframe {
     font-size: 30px;
     line-height: 35px;
     color: #111;
-    margin-bottom:50px;
+    margin-bottom:60px;
     left: 320px;
 }
 
@@ -212,7 +210,7 @@ h1 {
     width: 711px;
     height: 167px;
     left: 345px;
-    top: 280px;
+    top: 350px;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -226,8 +224,8 @@ h1 {
 .titulo-parceiros {
     background-image: url("https://i.imgur.com/Q0jC6SD.png");
     width: 1349px;
-    height: 280px;
-    margin-top: 300px;
+    height: 80px;
+    margin-top: 550px;
     position: relative;
     z-index: 3;
 }
@@ -289,5 +287,5 @@ h1 {
     position: relative;
     width: 1349px;
     height: 700px;
-    margin-top: 200px;
+    margin-top: 500px;
 }

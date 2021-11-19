@@ -2,3 +2,7 @@ html
 {
   scroll-behavior: smooth;
 }
+::selection{
+  background: #e06309;
+  color: #fff;
+}

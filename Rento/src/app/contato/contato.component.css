@@ -1,0 +1,87 @@
+body{
+    background-color: #f2a410;
+    margin: 0;
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("../../assets/font/Poppins-Bold.ttf");
+}
+
+
+
+h1{
+    color: #000000;
+    font-size: 2.8rem;
+    letter-spacing: 0.075em;
+    line-height: 1.45;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+ }
+ 
+form{
+    position: relative;
+    width: 446px;
+    height: 506px;
+    background: rgba(222, 52, 17, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 33.6842px;
+}
+input{
+    color: #000000;
+}
+
+#nome{
+    position: relative;
+    width: 376px;
+    height: 54px;
+    margin-top: 100px;
+    margin-left: 40px;
+    background: #E3E2E2;
+    mix-blend-mode: overlay;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.textnome{
+    position: relative;
+    width: 79px;
+    height: 23px;
+}
+
+#email{
+    position: relative;
+    width: 376px;
+    height: 54px;
+    margin-top: 100px;
+    margin-left: 40px;
+    background: #E3E2E2;
+    mix-blend-mode: overlay;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+#assunto{
+    position: relative;
+    width: 376px;
+    height: 54px;
+    margin-bottom: 250px;
+    margin-left: 40px;
+    background: #E3E2E2;
+    mix-blend-mode: overlay;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+}

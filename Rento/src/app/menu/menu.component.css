@@ -154,7 +154,7 @@ header nav{
 }
 
 .nav-item:hover .nav-link {
-    color: #DE3411 !important;
+    color: #f2a410 !important;
     
 }
 
@@ -178,7 +178,7 @@ header nav{
     width: 70%;
     height: 3px;
     content: '';
-    background-color: #DE3411;
+    background-color: #111;
     opacity: 0;
     transition: all 200ms linear;
 }

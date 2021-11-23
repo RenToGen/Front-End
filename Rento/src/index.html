@@ -9,5 +9,21 @@
 </head>
 <body>
   <app-root></app-root>
+  
+  <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+  </script>
+  <script>
+      (function () {
+          window.onload = function () {
+              new BlipChat()
+              .withAppKey('Z2VuMToyZmQxNTA0MC00YjU3LTRmODItOWEyNy1iMDdlMmY4NWI0YTM=')
+              .withButton({"color":"#E06309","icon":""})
+              .withCustomCommonUrl('https://tiago-assis-eq4al.chat.blip.ai/')
+              .build();
+          }
+      })();
+  </script>
+                                  
+                                  
 </body>
 </html>

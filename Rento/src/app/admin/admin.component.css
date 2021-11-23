@@ -295,3 +295,25 @@ td {
   line-height: 37px;
   color: #111111;
 }
+
+/* Atualizar perfil */
+.btnEditar {
+	background:linear-gradient(to bottom, #ff6f3a 5%, #ff6817 100%);
+	background-color:#ff5900;
+	border: radius 10%;;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Azeebee;
+	font-size:2vw;
+	text-decoration:none;
+  width: 90%;
+}
+.btnEditar:hover {
+	background:linear-gradient(to bottom, #ff6817 5%, #ff6f3a 100%);
+	background-color:#ff5900;
+}
+.btnEditar:active {
+	position:relative;
+	top:1px;
+}

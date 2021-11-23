@@ -27,6 +27,11 @@
                     placeholder="Link da sua Foto">
             </div>
             <div class="form-group">
+                <!-- <label for="usuario">Usuário</label> -->
+                <input [(ngModel)]='usuario.telefone' class="form1 form-control" type="text" name="telefone"
+                    id="telefone" placeholder="Telefone com DDD">
+            </div>
+            <div class="form-group">
                 <!-- <label for="senha">Senha</label> -->
                 <input (input)='confirmSenha($event)' class="form1 form-control" type="password" name="senha"
                     id="senha" placeholder="Senha">

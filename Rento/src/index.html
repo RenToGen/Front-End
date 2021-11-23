@@ -11,6 +11,22 @@
 
 <body>
   <app-root></app-root>
+  
+  <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+  </script>
+  <script>
+      (function () {
+          window.onload = function () {
+              new BlipChat()
+              .withAppKey('Z2VuMToyZmQxNTA0MC00YjU3LTRmODItOWEyNy1iMDdlMmY4NWI0YTM=')
+              .withButton({"color":"#E06309","icon":""})
+              .withCustomCommonUrl('https://tiago-assis-eq4al.chat.blip.ai/')
+              .build();
+          }
+      })();
+  </script>
+                                  
+                                  
 </body>
 <script class="">(function (d) { var s = d.createElement("script"); s.setAttribute("data-account", "olZinAVXWP"); s.setAttribute("src", "https://cdn.userway.org/widget.js"); (d.body || d.head).appendChild(s); })(document)</script>
 <noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website

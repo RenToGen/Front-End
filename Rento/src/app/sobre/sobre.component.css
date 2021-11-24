@@ -1,7 +1,30 @@
 body {
     background: #F2A410;
 }
-a { color: inherit; } 
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("../../assets/font/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("../../assets/font/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Anton-Regular;
+    src: url("../../assets/font/Anton-Regular.ttf");
+}
+
+/*=============================================fundos*/
+
 .segunda-parte {
     background-color: #E06309;
 }
@@ -10,10 +33,7 @@ a { color: inherit; }
     background-color: #000000;
 }
 
-.quarta-parte {
-    background: #F2A410;    
-}
-
+/*=============================================*/
 .ml-200 {
     margin-left: 100px;
 }
@@ -34,43 +54,24 @@ a { color: inherit; }
     width: 200px;
 }
 
-@font-face {
-    font-family: Poppins-Bold;
-    src: url("../../assets/font/Poppins-Bold.ttf");
-}
-
-@font-face {
-    font-family: Poppins-Regular;
-    src: url("../../assets/font/Poppins-Regular.ttf");
-}
-
-@font-face {
-    font-family: Anton-Regular;
-    src: url("../../assets/font/Anton-Regular.ttf");
-}
-
 .poppins-bold1 {
     font-family: Poppins-Bold;
-    letter-spacing: 3.5px;
+    letter-spacing: 3.1px;
     text-align: left;
-    margin-left: 150px;
+    margin-left: 120px;
 }
 
 .poppins-regular1 {
     font-family: Poppins-Regular;
     text-align: left;
-    margin-left: 150px;
-    margin-right: 50px;
+    margin-left: 120px;
+    margin-right: 90px;
     text-align: justify;
 }
 
 .anton {
     font-family: Anton-Regular;
     letter-spacing: 3px;
-}
-
-.bg-preto {
-    background-color: black;
 }
 
 .text-black {
@@ -89,6 +90,28 @@ a { color: inherit; }
 .row {
     margin-left: 0;
     margin-right: 0;
+}
+
+h1 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #111111;
+}
+
+h2 {
+    margin-top: 20vh;
+    bottom: 44.3%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+    color: #E06309;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 h3 {
@@ -124,12 +147,37 @@ p {
 }
 
 .text-3 {
-    
     font-style: normal;
     font-size: 15px;
     line-height: 30px;
-    text-align:center;
+    text-align: justify;
     color: #F4EFE9;
+}
+
+.titulocard {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #111111;
+}
+
+li {
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    color: #111111;
+}
+
+.saiba {
+    margin-left: 140px;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    color: #111111;
 }
 
 .imgBox img {
@@ -137,14 +185,17 @@ p {
     height: 30rem;
     object-fit: cover;
     resize: both;
-    margin-right: 60px;
+    margin-right: 160px;
 }
 
+
+/*=======================================================CARDS*/
 /*configurações de margem de texto*/
 
 .ft-card {
     border-radius: 50%;
 }
+
 .card {
     width: 450px;
     height: 250px;
@@ -156,6 +207,7 @@ p {
     position: relative;
     margin: 1.5rem;
 }
+
 .card h1 {
     text-align: center;
 }
@@ -185,6 +237,7 @@ p {
     position: relative;
     float: left;
 }
+
 .card .additional .user-card::after {
     content: "";
     display: block;
@@ -206,6 +259,7 @@ p {
     border-radius: 100px;
     white-space: nowrap;
 }
+
 .card .additional .user-card .points {
     top: 85%;
 }
@@ -230,6 +284,7 @@ p {
 .card.green .additional .more-info h1 {
     color: #fff;
 }
+
 .card .additional .coords {
     margin: 0 1rem;
     color: #fff;
@@ -254,6 +309,7 @@ p {
     top: auto;
     color: #fff;
 }
+
 .card.green .additional .stats {
     color: #fff;
 }
@@ -278,17 +334,20 @@ p {
     font-weight: bold;
     line-height: 1.5rem;
 }
+
 .card .additional .stats div.value.infinity {
     font-size: 2.5rem;
 }
 
 .card .general {
-   margin-left: 60px;
-  
+    margin-left: 60px;
+
 }
+
 ul {
     list-style: none;
-   }
+}
+
 .card .general .more {
     position: absolute;
     bottom: 1rem;
@@ -296,37 +355,43 @@ ul {
     font-size: 0.9em;
     margin-left: 30pt;
 }
+
 .position {
-    margin: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 0px;
 }
 
 .card-1 {
-    position: absolute;
-    left: 150px;
-    top: 1550px;
+    position: relative;
+    left: 10vh;
+    top: 10vh;
 }
 
 .card-2 {
-    position: absolute;
-    left: 150px;
-    top: 1850px;
+    position: relative;
+    left: 10vh;
+    top: 20vh;
 }
 
 .card-3 {
-    position: absolute;
-    left: 711.91px;
-    top: 1500px;
+    position: relative;
+    left: 95vh;
+    bottom: 90vh;
 }
 
 .card-4 {
-    position: absolute;
-    left: 711.91px;
-    top: 1800px;
+    position: relative;
+    left: 95vh;
+    bottom: 85vh;
 }
 
 .card-5 {
-    position: absolute;
-    left: 711.91px;
-    top: 2100px;
+    position: relative;
+    left: 95vh;
+    bottom: 80vh;
 }
 
+.fa{
+    color: #000000;
+}

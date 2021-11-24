@@ -15,7 +15,8 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-nb fixed-top ">
     <!-- logado -->
-    <a *ngIf='logado()' class="logologado" routerLink="/home"><img src="https://i.imgur.com/kR7eZXZ.png" width="50%" alt="logo da empresa rento"></a>
+    <a *ngIf='logado()' class="logologado" routerLink="/home">
+      <img class="img-fluid" src="https://i.imgur.com/kR7eZXZ.png" width="30%" alt="logo da empresa rento"></a>
 
     <!-- deslogado -->
     <a *ngIf='deslogado()' routerLink="/home">
@@ -57,13 +58,13 @@
 
         <ul *ngIf='logado()' class="navbar-nav d-flex align-items-center">
         
-          <div class="nav-item active">
-            <img src="{{foto}}" alt="Imagem do User" width="70px" height="70px" class="img-fluid rounded-circle">
+          <div class="nav-item imagem-user mr-4 active">
+            <img src="{{foto}}" alt="Imagem do User"  class="img-fluid1 imagem-user rounded-circle">
           
           </div>
           <div class="nav-item">
 
-            <p class="m-0 font-weight-bold text-white fs-16"> {{nome}} </p>
+            <p class="m-0 font-weight-bold text-white fs-14"> {{nome}} </p>
             <li class="nav-item dropdown">
 
               <a class="nav-link dropdown-toggle fs-13 my-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"

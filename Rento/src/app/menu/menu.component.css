@@ -8,6 +8,9 @@
         font-family: Azeebee;
         src: url("../../assets/font/ABeeZee-Regular.ttf");
     }
+    .imagem-user{
+        text-align: right;
+    }
 
     .bg-nb {
         background-color: #E06309;
@@ -133,6 +136,15 @@
         .img-fluid {
             max-width: 100%;
             width: 25%;
+            margin-bottom: 0px;
+            margin-left: 100px;
+        }
+    }
+
+    @media (min-width: 700px) and (orientation: landscape) {
+        .img-fluid1 {
+            max-width: 40%;
+            width: 18%;
             margin-bottom: 0px;
             margin-left: 100px;
         }

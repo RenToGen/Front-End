@@ -135,8 +135,8 @@ section .section-title {
 
 .fs-10 {
     font-size: 10pt;
-    text-align: justify;
-    margin-right: 120px;
+    /* text-align: justify; */
+    /* margin-right: 120px; */
 }
 
 #footer {
@@ -149,5 +149,6 @@ section .section-title {
 }
 .img1{
     text-align: center !important;
-    text-justify: auto;
+    /* text-justify: auto; */
+    padding: 0;
 }

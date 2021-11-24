@@ -143,3 +143,11 @@ section .section-title {
     position: absolute;
     bottom: -1;
 }
+
+.fa {
+    vertical-align: -15%;
+}
+.img1{
+    text-align: center !important;
+    text-justify: auto;
+}

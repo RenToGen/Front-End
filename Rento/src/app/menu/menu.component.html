@@ -36,7 +36,7 @@
           <a class="nav-item nav-link mr-5" routerLink='/cursos'>CURSOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link mr-5" routerLink='/servicos'>SERVIÇOS</a>
+          <a class="nav-item nav-link mr-5" routerLink='/servicos' *ngIf='logado()' >SERVIÇOS</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link mr-5" routerLink='/sobre'>SOBRE NÓS</a>

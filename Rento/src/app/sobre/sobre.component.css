@@ -49,13 +49,18 @@ a { color: inherit; }
     src: url("../../assets/font/Anton-Regular.ttf");
 }
 
-.poppins-bold {
+.poppins-bold1 {
     font-family: Poppins-Bold;
     letter-spacing: 3.5px;
+    text-align: left;
+    margin-left: 150px;
 }
 
-.poppins-regular {
+.poppins-regular1 {
     font-family: Poppins-Regular;
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 50px;
     text-align: justify;
 }
 
@@ -127,15 +132,16 @@ p {
     color: #F4EFE9;
 }
 
+.imgBox img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    resize: both;
+    margin-right: 60px;
+}
 
 /*configurações de margem de texto*/
 
-.init {
-    position: relative;
-    width: 545px;
-    height: 269px;
-    left: 50px;
-}
 .ft-card {
     border-radius: 50%;
 }

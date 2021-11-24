@@ -58,6 +58,11 @@ h2 {
 .card {
   background: #FD7B83
 }
+.card-img-top {
+  width: 100%;
+  width: 405px;
+  height: 200px;
+}
 
 .border {
   border-width: 2px !important;
@@ -1151,4 +1156,5 @@ p {
   font-family: Azeebee;
   font-size: 10px;
  }
+ 
 }

@@ -13,7 +13,7 @@ import { AuthService } from '../service/auth.service';
   selector: 'app-categoria',
   templateUrl: './categoria.component.html',
   styleUrls: ['./categoria.component.css']
-})  
+})
 
 export class CategoriaComponent implements OnInit {
 
@@ -27,6 +27,14 @@ export class CategoriaComponent implements OnInit {
   idProduto: number // teste
   Usuario: Usuario = new Usuario()
 
+  idCat: number
+  telefone: ''
+  nome: ''
+  apresentacao: ''
+  imagem: ''
+  valor: ''
+  nomeServico: ''
+
 
   constructor(
     private router: Router,
@@ -35,63 +43,45 @@ export class CategoriaComponent implements OnInit {
     private produtoService: ProdutoService,
     private authService: AuthService
 
-    
+
   ) { }
 
   ngOnInit() {
-    // retirar apos testes
+    
     // environment.token = "Basic Z3VzdGF2b0B0ZXN0ZS5jb206MTIzNDU2Nzg5"
-    // retirar apos testes
-    window.scroll(0,0)
-    if(environment.token == ''){
-    this.router.navigate(['/home'])
+
+    window.scroll(0, 0)
+    if (environment.token == '') {
+      this.router.navigate(['/home'])
+    }
+
+    this.findAllCategorias()
+    this.getAllProduto()
   }
 
-  this.findAllCategorias()
-  this.getAllProduto()
-}
-
- findAllCategorias(){
-       this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
-         this.listaCategoria = resp
-       })
-     }
-
-  cadastrar(){
-     
-     this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria)=>{
-       this.categoria = resp
-       alert('Tema cadastrado com sucesso!')
-       this.findAllCategorias()
-       this.categoria = new Categoria()
-     })
-  }
-  // teste gus
-  /*
-  findByIdCategoria(){
-    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) =>{
-      this.categoria = resp
+  findAllCategorias() {
+    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
+      this.listaCategoria = resp
     })
   }
-  */
-  getAllProduto(){
+
+  cadastrar() {
+
+    this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria) => {
+      this.categoria = resp
+      alert('Tema cadastrado com sucesso!')
+      this.findAllCategorias()
+      this.categoria = new Categoria()
+    })
+  }
+
+  getAllProduto() {
     this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
       this.listaProduto = resp
     })
     console.log(this.listaProduto)
   }
 
-  // getAllUsuario(){
-  //   this.authService.getAllUsuario().subscribe((resp: Usuario) => {
-  //     this.Usuario = resp
-  //   })
-  //   console.log(this.Usuario)
-  // }
 
-  // getByIdProduto(id: number){
-  //   this.produtoService.getByIdProduto(id).subscribe((resp: Produto[]) => {
-  //     this.listaProduto = resp
-  //   })
-  //   console.log(this.listaProduto)
-  // }
+
 }

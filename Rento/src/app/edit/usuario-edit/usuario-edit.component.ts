@@ -53,7 +53,7 @@ export class UsuarioEditComponent implements OnInit {
         environment.nome = ''
         environment.foto = ''
         environment.id = 0
-        this.router.navigate(['/login'])
+        this.router.navigate(['/home'])
       })
     }
 

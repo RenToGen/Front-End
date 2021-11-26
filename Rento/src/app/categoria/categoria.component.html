@@ -15,12 +15,15 @@
 </head>
 
 <body>
+	<hr><hr><hr>
 	<!--cards-->
 	<div class="fundo">
 		<div *ngFor='let item of listaCategoria' class="primeira-categoria col-md-12">
 			<div></div>
 			<div class="categoria rounded rounded-lg">
-				<div class="mb-1 fonteTitulo">{{item.categoria}}</div>
+				<div></div>
+				<hr>
+				<div class="mt-2 fonteTitulo">{{item.categoria}}</div>
 				<hr>
 				<h2 class="valor-categoria fonteValor">Valor por serviço: R$ {{item.valor}}</h2>
 				<div class="card-columns">
@@ -37,8 +40,7 @@
 												<div class=" modalEstilo">
 													<div class="">
 														<div class="d-flex  flex-column">
-															<div
-																class="ml-3 fonteModal d-flex flex-column justify-content-center align-items-center">
+															<div															class="ml-3 fonteModal d-flex flex-column justify-content-center align-items-center">
 																<div>
 																	<div class="mt-3">{{item1.apresentacao}}
 																	</div>
@@ -66,9 +68,14 @@
 																		</div>
 																		<div
 																			class="d-flex flex-column justify-content-center align-items-center mb-3">
-																			<a type="button"
+																			<!-- <a type="button"
 																				class="btn btn-grad  btn-grad:hover mt-2 "
-																				href="https://wa.me/55{{item1.usuario.telefone}}">Solicitar</a>
+																				target="_blank"
+																				href="https://wa.me/55{{item1.usuario.telefone}}">Solicitar</a> -->
+																				<a type="button"
+																				class="btn btn-grad  btn-grad:hover mt-2 "
+																				target="_blank"
+																				href="https://wa.me/5514997058050">Solicitar</a>
 																		</div>
 																	</div>
 																</div>

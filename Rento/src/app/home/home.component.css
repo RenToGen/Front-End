@@ -2,6 +2,9 @@ body {
     margin: 0;
     overflow: hidden;
 }
+.mr-4{
+    margin-right: 250px;
+}
 
 
 .ml-200 {

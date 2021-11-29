@@ -37,7 +37,7 @@
       <div class="d-flex justify-content-center pb-5">
         <button type="button" routerLink='/cursos'
           class="btn border bg-preto text-amarelo btn-lg mr-1 anton wt-200 rounded-0">CURSOS</button>
-        <button type="button" routerLink='/servicos'
+        <button type="button" data-toggle="modal" href="" data-target="#modalCadastro"
           class="btn border bg-amarelo text-black btn-lg mr-1 anton wt-200 rounded-0">CONTRATAR</button>
       </div>
     </div>
@@ -69,22 +69,22 @@
     <section class="parceiros">
       <div class="container">
         <div class="box">
-          <div class="imgBox" >
+          <div class="imgBox">
             <img
               src="https://images-ext-2.discordapp.net/external/IID1fP-PsEiUWuTaVbfqxFdlhHrLG20FqDDaQBTd6Rs/https/i.imgur.com/mQbc4kF.png?width=387&height=406"
-              alt="logo da empresa NICK" >             
+              alt="logo da empresa NICK">
           </div>
         </div>
       </div>
     </section>
     <section class="newsletter">
-      <div class="news-color">
-        <div class="titulo-new">SE INSCREVA E RECEBA NOSSA NEWSLETTER</div>
-        <form>
-          <input type="email" id="email" onkeyup='validaEmail()'>
-          <div class="validaEmail" id='txtEmail'></div>
-        </form>
-        <div id="testbutton"></div>
+      <div class="news-color d-flex flex-column justify-content-start">
+        <div class="titulo-new ">SE INSCREVA E RECEBA NOSSA NEWSLETTER</div>
+          <form>
+            <input type="email" id="email" onkeyup='validaEmail()'>
+            <div class="validaEmail" id='txtEmail'></div>
+          </form>
+          <div  id="testbutton"></div>
       </div>
     </section>
   </main>

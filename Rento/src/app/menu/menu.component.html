@@ -54,24 +54,26 @@
           data-target="#modalCadastro"></button>
       </div>
 
-      <div class="form-inline my-2 ml-lg-0 pr-4 mr-4">
+      <div class="form-inline my-2 my-lg-0">
 
-        <ul *ngIf='logado()' class="navbar-nav d-flex align-items-center">
+
+        <ul *ngIf='logado()' class="navbar-nav d-flex">
         
           <div class="nav-item imagem-user mr-4 active">
-            <img src="{{foto}}" alt="Imagem do User"  class="img-fluid1 imagem-user rounded-circle">
+            <img src="{{foto}}" alt="Imagem do User"  class="img-fluid1 imagem-user rounded-circle" width="10%">
           
           </div>
-          <div class="nav-item ">
+          <div class="nav-item pr-5" >
 
             <p class="m-0 font-weight-bold text-white fs-14"> {{nome}} </p>
-            <li class="nav-item dropdown">
+            <li class="nav-item  dropleft">
+              
+              <a class="nav-link dropdown-toggle fs-13 my-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
 
-              <a class="nav-link dropdown-toggle fs-13 my-2 mr-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-expanded="false">
                 Menu
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu dropleft" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item mt-3" routerLink="/admin">Admin</a>
                 <a class="dropdown-item my-3" href="">Mensagens</a>
 

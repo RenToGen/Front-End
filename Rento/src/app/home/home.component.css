@@ -94,8 +94,10 @@ body {
 /*=================apresentacao*/
 .apresentacao {
     background-image: url("https://i.imgur.com/I0FHUv4.png");
-    width:100%;
+    background-size: 100vw;
+    width: 100%;
     height: 1124px;
+    /* height: auto; */
     position: relative;
     z-index: 3;
     background-repeat: repeat-x;
@@ -122,22 +124,20 @@ iframe {
 }
 
 .newsletter {
-    /* background-image: url("https://image.freepik.com/free-photo/medium-shot-students-with-laptop_23-2148950529.jpg"); */
     background-image: url("https://i.imgur.com/u6iw22i.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    width: 1800px;
-    height: 842px;
+    width: 100vw;
+    height: 50vw;
     top: 1050px;
     z-index: 1;
 }
 
 .news-color {
-    position: absolute;
-    width: 1380px;
     overflow: hidden;
-    height: 942px;
+    width: 100vw;
+    height: 50vw;
     background: rgba(244, 239, 233, 0.4);
 }
 
@@ -204,8 +204,6 @@ iframe {
     left: 4%;
     background-color: rgb(19, 20, 22);
 }
-
-
 /*========================parceiros*/
 .titulo3 {
     position: absolute;
@@ -229,20 +227,24 @@ h1 {
     color: #F4EFE9;
 }
 
-.titulo-parceiros {
-    background-image: url("https://i.imgur.com/Q0jC6SD.png");
-    width: 1349px;
-    height: 80px;
-    position: relative;
-    z-index: 3;
+@media (max-width: 600px) {
+    h1 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 79px;
+        text-align: center;
+        letter-spacing: 0.465rem;
+        color: #F4EFE9;
+    }
 }
 
 /*fundo e logos*/
 .parceiros {
     background-image: url(https://i.imgur.com/h9wHyq7.png);
+    background-size: 100vw;
     position: relative;
-    width: 1600px;
-    height: 700px;
+    height: 30vw;
     margin-top: 150px;
 }
 
@@ -280,8 +282,8 @@ h1 {
 }
 
 .imgBox img {
-    width: 30rem;
-    height: 30rem;
+    width: 25vw;
+    height: 25vw;
     object-fit: cover;
     resize: both;
 }
@@ -294,4 +296,78 @@ h1 {
     .container .box:hover .imgBox {
         transform: translate(0, -3.5rem);
     }
+
+    .apresentacao {
+        height: 250vw;
+        background-size: 150vw;
+        align-items: center;
+        /* height: auto; */
+        position: relative;
+        z-index: 3;
+        background-repeat: repeat-x;
+        margin-left: 0px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .apresentacao .poppins-bold {
+        font-family: Poppins-Bold;
+        letter-spacing: 3.5px;
+        text-align: left;
+        margin-left: 80px;
+    }
+    
+    .apresentacao .poppins-regular {
+        font-family: Poppins-Regular;
+        text-align: left;
+        margin-left: 70px;
+        margin-right: auto;
+        text-align: left;
+        padding-right: 30px;
+        
+    }
+    .pt-100 {
+        padding-top: 0px;
+    }
+    .parceiros {
+        background-size: 100vw;
+        /* background-repeat: repeat-x; */
+        position: relative;
+        /* width: 1600px; */
+        /* height: 700px; */
+        height: 45vw;
+        margin-top: 150px;
+    }
+    #email {
+        position: relative;
+        width: 80vw;
+        height: 10vw;
+        left: 10px;
+        margin-top: -10px;
+        border: 0px;
+        background: rgba(244, 239, 233, 0.7);
+    }
+    .newsletter {
+        background-image: url("https://i.imgur.com/u6iw22i.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+        width: 100vw;
+        height: 50vw;
+        top: 30px;
+        z-index: 1;
+    }
+    .titulo-new {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 75px;
+        color: #000000;
+        z-index: 3;
+        position: relative;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    
+
 }

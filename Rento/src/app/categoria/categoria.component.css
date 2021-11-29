@@ -1,6 +1,7 @@
 /*background*/
 body {
   background: #F2A410;
+  background-size: 100%;
 }
 
 /*=============================================================================categoria*/
@@ -60,13 +61,9 @@ h2 {
   background: #111111;
   margin: 10vh;
 }
-
-
-
 .border {
   border-width: 2px !important;
 }
-
 /*=======================================================================categoria cards*/
 body::before {
   content: '';
@@ -196,7 +193,13 @@ body::before {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+  body {
+    background: #F2A410;
+    background-size: 100%;
+    
+    margin-top: -20px;
+  } 
   .fonteTitulo {
     font-family: Azeebee;
     font-size: 18px !important;
@@ -218,11 +221,6 @@ body::before {
     font-size: 12px;
   }
 
-  .fonteUsuario {
-    font-family: Azeebee;
-    font-size: 1.25vw;
-  }
-
   .fonteModal {
     font-family: Azeebee;
     color: #111111;
@@ -236,5 +234,189 @@ body::before {
   .card {
     background: #111111;
     margin: 5vh;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 150px;
+  }
+  .fonteTitulo {
+    margin-top: 10vh;
+    margin-left: 10vh;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: bold;
+    /* font-size: 30px; */
+    line-height: 45px;
+    color: #111111;
+  } 
+
+  .fonteValor {
+    margin-top: 5vh;
+    margin-left: 10vh;
+    font-size: 5vw;
+    font-style: normal;
+    /* font-size: 20px; */
+    line-height: 45px;
+    color: #111111;
+  }
+
+  .fonteServico {
+    font-weight: bold;
+    font-size: 2vh;
+    margin-left: 2vh;
+    color: #E06309;
+  }
+
+  .fonteUsuario {
+    font-family: Azeebee;
+    font-size: 3vw;
+    text-align:justify;
+  }
+
+  .fonteModal {
+    margin: 5vh;
+    font-size: 1vw;
+  }
+
+  .btnSolicitar {
+    font-family: Azeebee;
+  }
+  .categoria {
+    margin-top: 7vw;
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding: -1vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #F4EFE9;
+  }
+  
+  /*texto*/
+  .h1categoria {
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 45px;
+    /* idêntico à altura da caixa */
+    letter-spacing: 0.215em;
+    color: #111111;
+  }
+  
+  h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 37px;
+    color: #111111;
+  }
+  
+  /*=======================================================================Cards Gus-graebin*/
+  .card-columns{
+    width: 80vw;
+  }
+  
+  .card-columns {
+    
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+  
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
+  
+  .card {
+    background: #111111;
+    margin-left: 20px;
+    margin-right: 13px;
+  }  
+  
+  .border {
+    border-width: 2px !important;
+  }
+  
+  /*=======================================================================categoria cards*/
+  body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+    height: 100vh;
+  }
+  
+  /*==============================================================================Modal Serviço*/
+  .modalEstilo {
+    background: #F2A410;
+    border-radius: 50px;
+  }
+  
+  .img-servico {
+    border-radius: 25%;
+    width: 25vw;
+  }
+  
+  .btn-grad {
+    background-image: radial-gradient(#151404 30%, #000000 70%, #1c1b06 100%)
+  }
+  
+  .btn-grad {
+    font-family: Azeebee;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    letter-spacing: 1.5px;
+    border-radius: 25%;
+    box-shadow: 0 0 5px #041f0c;
+    display: block;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+  }  
+  
+  .btnSolicitar {
+    background-image: linear-gradient(to right, #ff2313 0%, #f8855c 51%, #f2554a 100%)
+  }
+  
+  .btnSolicitar {
+    font-family: Azeebee;
+    margin: 1%;
+    padding: 5% 15%;
+    text-align: center;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 3% #a34b44;
+    border-radius: 25%;
+    display: block;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btnSolicitar:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
 }

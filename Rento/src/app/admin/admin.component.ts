@@ -115,4 +115,6 @@ getAllProduto(){
   })
   console.log(this.listaProduto)
 }
+
+
 }

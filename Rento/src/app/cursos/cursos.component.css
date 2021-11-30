@@ -36,7 +36,9 @@
 }
 
 .card{
+  margin-top: 2vh;
   margin-left: 8vh;
+  height: 11vw;
 }
 
 h1{
